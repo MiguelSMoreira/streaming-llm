@@ -13,6 +13,8 @@ import sys
 from tqdm import tqdm
 from streaming_llm.utils import load, download_url, load_jsonl
 from streaming_llm.enable_streaming_llm import enable_streaming_llm
+from retriever.retriever import Retriever
+from typing import Optional
 
 
 @torch.no_grad()
@@ -54,14 +56,18 @@ def greedy_generate(model, tokenizer, input_ids, past_key_values, max_gen_len):
         if pred_token_idx == tokenizer.eos_token_id:
             break
     print(" ".join(generated_text[pos:]), flush=True)
-    return past_key_values
+    return past_key_values, " ".join(generated_text[pos:])
 
 
 @torch.no_grad()
-def streaming_inference(model, tokenizer, prompts, kv_cache=None, max_gen_len=1000):
+def streaming_inference(model, tokenizer, prompts, kv_cache=None, max_gen_len=1000, retriever:Optional[Retriever]=None):
     past_key_values = None
     for idx, prompt in enumerate(prompts):
-        prompt = "USER: " + prompt + "\n\nASSISTANT: "
+        if retriever:
+            retriever_results = retriever.retrieve(prompt)
+            prompt = " ".join(retriever_results) + "\n\nUSER: " + prompt + "\n\nASSISTANT: "
+        else:
+            prompt = "USER: " + prompt + "\n\nASSISTANT: "
         print("\n" + prompt, end="")
         input_ids = tokenizer(prompt, return_tensors="pt").input_ids
         input_ids = input_ids.to(model.device)
@@ -70,14 +76,18 @@ def streaming_inference(model, tokenizer, prompts, kv_cache=None, max_gen_len=10
             space_needed = seq_len + max_gen_len
             past_key_values = kv_cache.evict_for_space(past_key_values, space_needed)
 
-        past_key_values = greedy_generate(
+        past_key_values, output = greedy_generate(
             model, tokenizer, input_ids, past_key_values, max_gen_len=max_gen_len
         )
+        
+        retriever.add_to_contextwindow(prompt)
+        retriever.add_to_contextwindow(output)
 
 
 def main(args):
     model_name_or_path = args.model_name_or_path
     model, tokenizer = load(model_name_or_path)
+    retriever = Retriever(tokenizer, args.recent_size)
     test_filepath = os.path.join(args.data_root, "mt_bench.jsonl")
     print(f"Loading data from {test_filepath} ...")
 
@@ -105,6 +115,7 @@ def main(args):
         tokenizer,
         prompts,
         kv_cache,
+        retriever=retriever
     )
 
 
