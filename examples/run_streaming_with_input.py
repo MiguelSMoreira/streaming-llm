@@ -86,7 +86,7 @@ def load_prompts(file_path):
     with open(file_path, "r") as f:
         file_content = json.load(f)
     # Merge all prompts into a single string
-    return [i["content"].replace("\n", " ") for i in file_content]
+    return [i["content"] for i in file_content]
 
 
 def load_prompt(file_path):
