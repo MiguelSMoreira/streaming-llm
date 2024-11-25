@@ -88,46 +88,62 @@ def main(args):
     model_name_or_path = args.model_name_or_path
     model, tokenizer = load(model_name_or_path)
     retriever = Retriever(tokenizer, args.recent_size)
-    test_filepath = os.path.join(args.data_root, "mt_bench.jsonl")
-    print(f"Loading data from {test_filepath} ...")
 
-    if not os.path.exists(test_filepath):
-        download_url(
-            "https://raw.githubusercontent.com/lm-sys/FastChat/main/fastchat/llm_judge/data/mt_bench/question.jsonl",
-            args.data_root,
-        )
-        os.rename(os.path.join(args.data_root, "question.jsonl"), test_filepath)
-
-    list_data = load_jsonl(test_filepath)
-    prompts = []
-    for sample in list_data:
-        prompts += sample["turns"]
-
-    if args.enable_streaming:
-        kv_cache = enable_streaming_llm(
+    # Determine caching based on streaming
+    kv_cache = (
+        enable_streaming_llm(
             model, start_size=args.start_size, recent_size=args.recent_size
         )
-    else:
-        kv_cache = None
-
-    streaming_inference(
-        model,
-        tokenizer,
-        prompts,
-        kv_cache,
-        retriever=retriever
+        if args.enable_streaming
+        else None
     )
 
+    # Check the mode based on enable_iterative
+    if args.enable_iterative:
+        while True:
+            # Get user input from the command line
+            user_input = input("Enter a prompt (or 'exit' to quit): ")
+            if user_input.lower() == "exit":
+                print("Exiting...")
+                break
+
+            # Perform streaming inference for the user-provided input
+            streaming_inference(
+                model, tokenizer, [user_input], kv_cache, retriever=retriever
+            )
+    else:
+        test_filepath = os.path.join(args.data_root, "mt_bench.jsonl")
+        print(f"Loading data from {test_filepath} ...")
+
+        # Download the file if it doesn't exist
+        if not os.path.exists(test_filepath):
+            download_url(
+                "https://raw.githubusercontent.com/lm-sys/FastChat/main/fastchat/llm_judge/data/mt_bench/question.jsonl",
+                args.data_root,
+            )
+            os.rename(os.path.join(args.data_root, "question.jsonl"), test_filepath)
+
+        # Load and process the file
+        list_data = load_jsonl(test_filepath)
+        prompts = [turn for sample in list_data for turn in sample["turns"]]
+
+        # Perform streaming inference for the loaded prompts
+        streaming_inference(
+            model, tokenizer, prompts, kv_cache, retriever=retriever
+        )
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "--model_name_or_path", type=str, default="lmsys/vicuna-13b-v1.3"
+        "--model_name_or_path", type=str, 
+        # default="lmsys/vicuna-13b-v1.3"
+        default="meta-llama/Llama-2-7b-chat-hf",
     )
     parser.add_argument("--data_root", type=str, default="data/")
     parser.add_argument("--enable_streaming", action="store_true")
     parser.add_argument("--start_size", type=int, default=4)
     parser.add_argument("--recent_size", type=int, default=2000)
+    parser.add_argument("--enable_iterative", action="store_true", default=False, help="Enable iterative input mode")
     args = parser.parse_args()
 
     main(args)
