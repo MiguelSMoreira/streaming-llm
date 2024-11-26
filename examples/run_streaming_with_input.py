@@ -6,6 +6,7 @@ import json
 import torch
 import argparse
 
+from retriever.retriever import Retriever
 from streaming_llm.utils import load
 from streaming_llm.enable_streaming_llm import enable_streaming_llm
 
@@ -137,7 +138,7 @@ def main():
     # Enable RAG if specified
     if args.enable_retriever:
         # Tokenize and ingest to the vectorDB
-        retriever = None
+        retriever = Retriever(tokenizer, args.recent_size)
     else:
         retriever = None
 
