@@ -136,7 +136,10 @@ def main(args):
         kv_cache = None
 
     streaming_inference(
-        model, tokenizer, prompts, kv_cache,
+        model,
+        tokenizer,
+        prompts,
+        kv_cache,
         retriever=retriever,
         debug_retriever=args.debug_retriever,
     )

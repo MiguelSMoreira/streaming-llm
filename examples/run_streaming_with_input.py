@@ -5,14 +5,20 @@ warnings.filterwarnings("ignore")
 import json
 import torch
 import argparse
-from transformers import (
-    AutoTokenizer,
-    AutoModelForCausalLM,
-)
 
-from tqdm import tqdm
 from streaming_llm.utils import load
 from streaming_llm.enable_streaming_llm import enable_streaming_llm
+
+
+TEMPLATE_RETRIEVER = """
+<s>[INST] <<SYS>> You are a helpful assistant. Use the following information to answer the user's question. <</SYS>>
+{retrieved_context}
+USER: {user_message} [/INST]
+"""
+
+TEMPLATE_SIMPLE = """
+<s>[INST] USER: {user_message} [/INST]
+"""
 
 
 @torch.no_grad()
@@ -54,16 +60,32 @@ def greedy_generate(model, tokenizer, input_ids, past_key_values, max_gen_len):
         if pred_token_idx == tokenizer.eos_token_id:
             break
     print(" ".join(generated_text[pos:]), flush=True)
-    return past_key_values
+    return past_key_values, " ".join(generated_text[pos:])
 
 
 @torch.no_grad()
-def streaming_inference(model, tokenizer, prompts, kv_cache=None, max_gen_len=1000):
+def streaming_inference(
+    model,
+    tokenizer,
+    prompts,
+    kv_cache=None,
+    max_gen_len=1000,
+    retriever=None,
+    preamble=False,
+):
     past_key_values = None
     for idx, prompt in enumerate(prompts):
         # Construct the current prompt
-        prompt = "USER: " + prompt + "\n\nASSISTANT: "
-        print("\n" + prompt, end="")
+        if preamble:
+            print(f"\n\nUSER: {prompt}")
+        if retriever:
+            retriever_results = retriever.retrieve(prompt)
+            prompt = TEMPLATE_RETRIEVER.format(
+                retrieved_context=retriever_results, user_message=prompt
+            )
+        else:
+            prompt = TEMPLATE_SIMPLE.format(user_message=prompt)
+        print("ASSISTANT:", end=" ")
 
         input_ids = tokenizer(prompt, return_tensors="pt").input_ids
         input_ids = input_ids.to(model.device)
@@ -73,9 +95,14 @@ def streaming_inference(model, tokenizer, prompts, kv_cache=None, max_gen_len=10
             space_needed = seq_len + max_gen_len
             past_key_values = kv_cache.evict_for_space(past_key_values, space_needed)
 
-        past_key_values = greedy_generate(
+        past_key_values, output = greedy_generate(
             model, tokenizer, input_ids, past_key_values, max_gen_len=max_gen_len
         )
+
+        # Store with retriever
+        if retriever:
+            retriever.add_to_contextwindow(prompt)
+            retriever.add_to_contextwindow(output)
 
 
 def load_prompts(file_path):
@@ -108,14 +135,14 @@ def main():
         kv_cache = None
 
     # Enable RAG if specified
-    if args.enable_rag:
+    if args.enable_retriever:
         # Tokenize and ingest to the vectorDB
-        pass
+        retriever = None
     else:
-        pass
+        retriever = None
 
-    # Check the mode based on enable_iterative
-    if args.enable_iterative:
+    # Check the mode based on enable_interactive
+    if args.enable_interactive:
         while True:
             # Get user input from the command line
             user_input = input("Enter a prompt (or 'exit' to quit): ")
@@ -129,6 +156,7 @@ def main():
                 tokenizer=tokenizer,
                 prompts=[user_input],
                 kv_cache=kv_cache,
+                retriever=retriever,
             )
     else:
         # Load input from specified file path
@@ -140,6 +168,8 @@ def main():
             tokenizer=tokenizer,
             prompts=input_prompts,
             kv_cache=kv_cache,
+            retriever=retriever,
+            preamble=True,
         )
 
 
@@ -150,12 +180,17 @@ if __name__ == "__main__":
     )
     parser.add_argument("--data_root", type=str, default="data/")
     parser.add_argument("--enable_streaming", action="store_true")
-    parser.add_argument("--enable_rag", action="store_true")
     parser.add_argument(
-        "--enable_iterative",
+        "--enable_retriever",
         action="store_true",
         default=False,
-        help="Enable iterative input mode",
+        help="Enable retrieval-augmented generation",
+    )
+    parser.add_argument(
+        "--enable_interactive",
+        action="store_true",
+        default=False,
+        help="Enable interactive input mode",
     )
     parser.add_argument("--input_file_path", type=str)
     parser.add_argument("--start_size", type=int, default=4)
