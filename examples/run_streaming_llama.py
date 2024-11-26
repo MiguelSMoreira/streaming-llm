@@ -89,8 +89,9 @@ def streaming_inference(
             model, tokenizer, input_ids, past_key_values, max_gen_len=max_gen_len
         )
 
-        retriever.add_to_contextwindow(prompt)
-        retriever.add_to_contextwindow(output)
+        if retriever:
+            retriever.add_to_contextwindow(prompt)
+            retriever.add_to_contextwindow(output)
 
 
 def main(args):
