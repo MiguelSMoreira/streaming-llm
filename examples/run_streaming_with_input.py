@@ -68,17 +68,14 @@ def streaming_inference(model, tokenizer, prompts, kv_cache=None, max_gen_len=10
         input_ids = tokenizer(prompt, return_tensors="pt").input_ids
         input_ids = input_ids.to(model.device)
         seq_len = input_ids.shape[1]
-        # print(f"input_ids: {input_ids}")
 
         if kv_cache is not None:
             space_needed = seq_len + max_gen_len
             past_key_values = kv_cache.evict_for_space(past_key_values, space_needed)
-            # print(f"past_key_values1: {past_key_values}")
 
         past_key_values = greedy_generate(
             model, tokenizer, input_ids, past_key_values, max_gen_len=max_gen_len
         )
-        # print(f"past_key_values2: {past_key_values}")
 
 
 def load_prompts(file_path):
@@ -94,14 +91,13 @@ def load_prompt(file_path):
     with open(file_path, "r") as f:
         file_content = json.load(f)
     # Merge all prompts into a single string
-    return [". ".join([i["content"]for i in file_content])]
+    return [". ".join([i["content"] for i in file_content])]
 
 
 def main():
     # Parse the inputs
     model_name_or_path = args.model_name_or_path
     model, tokenizer = load(model_name_or_path)
-    input_prompts = load_prompt(args.input_file_path)
 
     # Enable streaming if specified
     if args.enable_streaming:
@@ -118,23 +114,49 @@ def main():
     else:
         pass
 
-    # Run streamingLLM inference
-    streaming_inference(
-        model=model,
-        tokenizer=tokenizer,
-        prompts=input_prompts,
-        kv_cache=kv_cache,
-    )
+    # Check the mode based on enable_iterative
+    if args.enable_iterative:
+        while True:
+            # Get user input from the command line
+            user_input = input("Enter a prompt (or 'exit' to quit): ")
+            if user_input.lower() == "exit":
+                print("Exiting...")
+                break
+
+            # Perform streaming inference for the user-provided input
+            streaming_inference(
+                model=model,
+                tokenizer=tokenizer,
+                prompts=[user_input],
+                kv_cache=kv_cache,
+            )
+    else:
+        # Load input from specified file path
+        input_prompts = load_prompt(args.input_file_path)
+
+        # Run streamingLLM inference
+        streaming_inference(
+            model=model,
+            tokenizer=tokenizer,
+            prompts=input_prompts,
+            kv_cache=kv_cache,
+        )
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "--model_name_or_path", type=str, default="lmsys/vicuna-13b-v1.3"
+        "--model_name_or_path", type=str, default="meta-llama/Llama-2-7b-chat-hf"
     )
     parser.add_argument("--data_root", type=str, default="data/")
     parser.add_argument("--enable_streaming", action="store_true")
     parser.add_argument("--enable_rag", action="store_true")
+    parser.add_argument(
+        "--enable_iterative",
+        action="store_true",
+        default=False,
+        help="Enable iterative input mode",
+    )
     parser.add_argument("--input_file_path", type=str)
     parser.add_argument("--start_size", type=int, default=4)
     parser.add_argument("--recent_size", type=int, default=2000)

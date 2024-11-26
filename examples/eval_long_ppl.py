@@ -43,7 +43,9 @@ else:
 
 if args.enable_pos_shift:
     if "llama" in model.config.model_type:
-        from streaming_llm.pos_shift.modify_llama import enable_llama_pos_shift_attention
+        from streaming_llm.pos_shift.modify_llama import (
+            enable_llama_pos_shift_attention,
+        )
 
         enable_llama_pos_shift_attention(model)
     elif "falcon" in model.config.model_type:

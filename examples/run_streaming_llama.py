@@ -60,12 +60,21 @@ def greedy_generate(model, tokenizer, input_ids, past_key_values, max_gen_len):
 
 
 @torch.no_grad()
-def streaming_inference(model, tokenizer, prompts, kv_cache=None, max_gen_len=1000, retriever:Optional[Retriever]=None):
+def streaming_inference(
+    model,
+    tokenizer,
+    prompts,
+    kv_cache=None,
+    max_gen_len=1000,
+    retriever: Optional[Retriever] = None,
+):
     past_key_values = None
     for idx, prompt in enumerate(prompts):
         if retriever:
             retriever_results = retriever.retrieve(prompt)
-            prompt = " ".join(retriever_results) + "\n\nUSER: " + prompt + "\n\nASSISTANT: "
+            prompt = (
+                " ".join(retriever_results) + "\n\nUSER: " + prompt + "\n\nASSISTANT: "
+            )
         else:
             prompt = "USER: " + prompt + "\n\nASSISTANT: "
         print("\n" + prompt, end="")
@@ -79,7 +88,7 @@ def streaming_inference(model, tokenizer, prompts, kv_cache=None, max_gen_len=10
         past_key_values, output = greedy_generate(
             model, tokenizer, input_ids, past_key_values, max_gen_len=max_gen_len
         )
-        
+
         retriever.add_to_contextwindow(prompt)
         retriever.add_to_contextwindow(output)
 
@@ -110,13 +119,7 @@ def main(args):
     else:
         kv_cache = None
 
-    streaming_inference(
-        model,
-        tokenizer,
-        prompts,
-        kv_cache,
-        retriever=retriever
-    )
+    streaming_inference(model, tokenizer, prompts, kv_cache, retriever=retriever)
 
 
 if __name__ == "__main__":
