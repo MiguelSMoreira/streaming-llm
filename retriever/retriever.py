@@ -64,3 +64,30 @@ class Retriever:
         retrieved_docs = [text for text in results['documents'][0]]
             
         return retrieved_docs    
+
+def test_retriever():
+    tokenizer = AutoTokenizer.from_pretrained(
+        'lmsys/vicuna-13b-v1.3',
+        trust_remote_code=True,
+    )
+    
+    # Initialize retriever
+    retriever = Retriever(tokenizer, context_limit=2000)
+    
+    # Test context window
+    retriever.add_to_contextwindow("New context text")
+    assert len(retriever.contextwindow) == 1
+    
+    # Test context window overflow
+    long_text = "Long text 0 " * 1000  # Create text that exceeds chunk limit
+    retriever.add_to_contextwindow(long_text)
+    long_text2 = "My password is 898989" + "Long text 1 " * 1000  # Create text that exceeds chunk limit    
+    retriever.add_to_contextwindow(long_text2)
+    
+    # Test retrieval
+    query = "What is my secret?"
+    results = retriever.retrieve(query, n_results=2)
+    assert len(results) == 2
+    assert "My password is 898989" in results[0]
+    
+    print("All tests passed!")
