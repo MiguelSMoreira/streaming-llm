@@ -64,6 +64,18 @@ def greedy_generate(model, tokenizer, input_ids, past_key_values, max_gen_len):
     return past_key_values, " ".join(generated_text[pos:])
 
 
+def emit_retriever_results(results):
+    """
+    Print out all the retriever results to manually check that it's (roughly?) working
+    """
+    # want to make sure iterating over this doesn't consume it
+    assert type(results) == list
+    print("=== RETRIEVER RESULTS ===")
+    for result in results:
+        print(result)
+    print("=== END RETRIEVER RESULTS ===")
+
+
 @torch.no_grad()
 def streaming_inference(
     model,
@@ -73,6 +85,7 @@ def streaming_inference(
     max_gen_len=1000,
     retriever=None,
     preamble=False,
+    debug_retriever=False
 ):
     past_key_values = None
     for idx, prompt in enumerate(prompts):
@@ -81,6 +94,8 @@ def streaming_inference(
             print(f"\n\nUSER: {prompt}")
         if retriever:
             retriever_results = retriever.retrieve(prompt)
+            if debug_retriever:
+                emit_retriever_results(retriever_results)
             prompt = TEMPLATE_RETRIEVER.format(
                 retrieved_context=retriever_results, user_message=prompt
             )
@@ -158,6 +173,7 @@ def main():
                 prompts=[user_input],
                 kv_cache=kv_cache,
                 retriever=retriever,
+                debug_retriever=args.debug_retriever,
             )
     else:
         # Load input from specified file path
@@ -171,6 +187,7 @@ def main():
             kv_cache=kv_cache,
             retriever=retriever,
             preamble=True,
+            debug_retriever=args.debug_retriever,
         )
 
 
@@ -181,6 +198,7 @@ if __name__ == "__main__":
     )
     parser.add_argument("--data_root", type=str, default="data/")
     parser.add_argument("--enable_streaming", action="store_true")
+    parser.add_argument("--debug_retriever", action="store_true")
     parser.add_argument(
         "--enable_retriever",
         action="store_true",
