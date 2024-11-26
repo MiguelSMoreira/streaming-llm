@@ -17,6 +17,17 @@ from retriever.retriever import Retriever
 from typing import Optional
 
 
+template_retriever = """
+<s>[INST] <<SYS>> You are a helpful assistant. Use the following information to answer the user's question. <</SYS>>
+{retrieved_context}
+
+USER: {user_message} [/INST]
+"""
+
+template_simple = """
+<s>[INST] USER: {user_message} [/INST]
+"""
+
 @torch.no_grad()
 def greedy_generate(model, tokenizer, input_ids, past_key_values, max_gen_len):
     outputs = model(
@@ -60,15 +71,22 @@ def greedy_generate(model, tokenizer, input_ids, past_key_values, max_gen_len):
 
 
 @torch.no_grad()
-def streaming_inference(model, tokenizer, prompts, kv_cache=None, max_gen_len=1000, retriever:Optional[Retriever]=None):
+def streaming_inference(model, tokenizer, prompts, kv_cache=None, max_gen_len=1000, retriever:Optional[Retriever]=None, preamble=False):
     past_key_values = None
     for idx, prompt in enumerate(prompts):
+        if preamble:
+            print(f"\n\nUSER: {prompt}")
         if retriever:
             retriever_results = retriever.retrieve(prompt)
-            prompt = " ".join(retriever_results) + "\n\nUSER: " + prompt + "\n\nASSISTANT: "
+            prompt = template_retriever.format(
+                retrieved_context=retriever_results,
+                user_message=prompt
+            )
         else:
-            prompt = "USER: " + prompt + "\n\nASSISTANT: "
-        print("\n" + prompt, end="")
+            prompt = template_simple.format(
+                user_message=prompt
+            )
+        print("ASSISTANT:", end=" ")
         input_ids = tokenizer(prompt, return_tensors="pt").input_ids
         input_ids = input_ids.to(model.device)
         seq_len = input_ids.shape[1]
@@ -79,15 +97,16 @@ def streaming_inference(model, tokenizer, prompts, kv_cache=None, max_gen_len=10
         past_key_values, output = greedy_generate(
             model, tokenizer, input_ids, past_key_values, max_gen_len=max_gen_len
         )
-        
-        retriever.add_to_contextwindow(prompt)
-        retriever.add_to_contextwindow(output)
+        if retriever:
+            retriever.add_to_contextwindow(prompt)
+            retriever.add_to_contextwindow(output)
 
 
 def main(args):
     model_name_or_path = args.model_name_or_path
     model, tokenizer = load(model_name_or_path)
-    retriever = Retriever(tokenizer, args.recent_size)
+    retriever = Retriever(tokenizer, context_limit=args.recent_size, chunk_limit=args.chunk_size) \
+        if args.enable_retriever else None
 
     # Determine caching based on streaming
     kv_cache = (
@@ -98,11 +117,11 @@ def main(args):
         else None
     )
 
-    # Check the mode based on enable_iterative
-    if args.enable_iterative:
+    # Check the mode based on enable_interactive
+    if args.enable_interactive:
         while True:
             # Get user input from the command line
-            user_input = input("Enter a prompt (or 'exit' to quit): ")
+            user_input = input("\n\nUSER (or 'exit' to quit): ")
             if user_input.lower() == "exit":
                 print("Exiting...")
                 break
@@ -129,21 +148,22 @@ def main(args):
 
         # Perform streaming inference for the loaded prompts
         streaming_inference(
-            model, tokenizer, prompts, kv_cache, retriever=retriever
+            model, tokenizer, prompts, kv_cache, retriever=retriever, preamble=True,
         )
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--model_name_or_path", type=str, 
-        # default="lmsys/vicuna-13b-v1.3"
         default="meta-llama/Llama-2-7b-chat-hf",
     )
     parser.add_argument("--data_root", type=str, default="data/")
     parser.add_argument("--enable_streaming", action="store_true")
     parser.add_argument("--start_size", type=int, default=4)
     parser.add_argument("--recent_size", type=int, default=2000)
-    parser.add_argument("--enable_iterative", action="store_true", default=False, help="Enable iterative input mode")
+    parser.add_argument("--chunk_size", type=int, default=200)
+    parser.add_argument("--enable_interactive", action="store_true", default=False, help="Enable interactive input mode")
+    parser.add_argument("--enable_retriever", action="store_true", default=False, help="Enable retrieval-augmented generation")
     args = parser.parse_args()
 
     main(args)
