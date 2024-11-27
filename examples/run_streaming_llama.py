@@ -65,10 +65,10 @@ def emit_retriever_results(results):
     """
     # want to make sure iterating over this doesn't consume it
     assert type(results) == list
-    print("=== RETRIEVER RESULTS ===")
+    print("\n=== RETRIEVER RESULTS ===")
     for result in results:
         print(result)
-    print("=== END RETRIEVER RESULTS ===")
+    print("=== END RETRIEVER RESULTS ===\n")
 
 
 @torch.no_grad()
@@ -80,19 +80,25 @@ def streaming_inference(
     max_gen_len=1000,
     retriever: Optional[Retriever] = None,
     debug_retriever=False,
-):
+    preamble=False,
     past_key_values = None
+):
     for idx, prompt in enumerate(prompts):
+        if preamble:
+            print(f"\n\nUSER: {prompt}")
         if retriever:
             retriever_results = retriever.retrieve(prompt)
             if debug_retriever:
                 emit_retriever_results(retriever_results)
-            prompt = (
-                " ".join(retriever_results) + "\n\nUSER: " + prompt + "\n\nASSISTANT: "
+            prompt = template_retriever.format(
+                retrieved_context=retriever_results,
+                user_message=prompt
             )
         else:
-            prompt = "USER: " + prompt + "\n\nASSISTANT: "
-        print("\n" + prompt, end="")
+            prompt = template_simple.format(
+                user_message=prompt
+            )
+        print("ASSISTANT:", end=" ")
         input_ids = tokenizer(prompt, return_tensors="pt").input_ids
         input_ids = input_ids.to(model.device)
         seq_len = input_ids.shape[1]
@@ -107,54 +113,106 @@ def streaming_inference(
         if retriever:
             retriever.add_to_contextwindow(prompt)
             retriever.add_to_contextwindow(output)
+    
+    return past_key_values
 
 
 def main(args):
     model_name_or_path = args.model_name_or_path
     model, tokenizer = load(model_name_or_path)
-    retriever = Retriever(tokenizer, args.recent_size)
-    test_filepath = os.path.join(args.data_root, "mt_bench.jsonl")
-    print(f"Loading data from {test_filepath} ...")
+    retriever = Retriever(
+        tokenizer, 
+        context_limit=args.recent_size, 
+        chunk_limit=args.chunk_size
+    ) if args.enable_retriever else None
 
-    if not os.path.exists(test_filepath):
-        download_url(
-            "https://raw.githubusercontent.com/lm-sys/FastChat/main/fastchat/llm_judge/data/mt_bench/question.jsonl",
-            args.data_root,
-        )
-        os.rename(os.path.join(args.data_root, "question.jsonl"), test_filepath)
-
-    list_data = load_jsonl(test_filepath)
-    prompts = []
-    for sample in list_data:
-        prompts += sample["turns"]
-
-    if args.enable_streaming:
-        kv_cache = enable_streaming_llm(
+    # Determine caching based on streaming
+    kv_cache = (
+        enable_streaming_llm(
             model, start_size=args.start_size, recent_size=args.recent_size
         )
-    else:
-        kv_cache = None
-
-    streaming_inference(
-        model,
-        tokenizer,
-        prompts,
-        kv_cache,
-        retriever=retriever,
-        debug_retriever=args.debug_retriever,
+        if args.enable_streaming else None
     )
+
+    # Check the mode based on enable_interactive
+    if args.enable_interactive:
+        past_key_values = None
+        while True:
+            # Get user input from the command line
+            user_input = input("\n\nUSER (or 'exit' to quit): ")
+            if user_input.lower() == "exit":
+                print("Exiting...")
+                break
+
+            # Perform streaming inference for the user-provided input
+            past_key_values = streaming_inference(
+                model, 
+                tokenizer, 
+                [user_input], 
+                kv_cache, 
+                retriever=retriever, 
+                past_key_values=past_key_values,
+                debug_retriever=args.debug_retriever,
+            )
+    else:
+        test_filepath = os.path.join(args.data_root, args.file_path)
+        print(f"Loading data from {test_filepath} ...")
+
+        # Download the file if it doesn't exist
+        if not os.path.exists(test_filepath):
+            download_url(
+                "https://raw.githubusercontent.com/lm-sys/FastChat/main/fastchat/llm_judge/data/mt_bench/question.jsonl",
+                args.data_root,
+            )
+            os.rename(os.path.join(args.data_root, "question.jsonl"), test_filepath)
+
+        # Load and process the file
+        list_data = load_jsonl(test_filepath)[0]
+        prompts = [sample['content'] for sample in list_data]
+
+        # Perform streaming inference for the loaded prompts
+        streaming_inference(
+            model, 
+            tokenizer, 
+            prompts, 
+            kv_cache, 
+            retriever=retriever, 
+            preamble=True, 
+            debug_retriever=args.debug_retriever,
+        )
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "--model_name_or_path", type=str, default="lmsys/vicuna-13b-v1.3"
+        "--model_name_or_path", 
+        type=str, 
+        default="meta-llama/Llama-2-7b-chat-hf",
+        # default="lmsys/vicuna-13b-v1.3",
     )
-    parser.add_argument("--debug_retriever", action="store_true")
+    parser.add_argument("--debug_retriever", action="store_true", default=False)
     parser.add_argument("--data_root", type=str, default="data/")
+    parser.add_argument("--file_path", type=str, default="mt_bench.jsonl")
     parser.add_argument("--enable_streaming", action="store_true")
     parser.add_argument("--start_size", type=int, default=4)
-    parser.add_argument("--recent_size", type=int, default=2000)
+    parser.add_argument("--recent_size", type=int, default=4096)
+    parser.add_argument("--chunk_size", type=int, default=200)
+    parser.add_argument("--enable_interactive", action="store_true", default=False, help="Enable interactive input mode")
+    parser.add_argument("--enable_retriever", action="store_true", default=False, help="Enable retrieval-augmented generation")
     args = parser.parse_args()
+
+    template_retriever = \
+    "<s>[INST] <<SYS>> You are a helpful assistant who provides concise and accurate answers. The following context is relevant to the user's query: " +\
+    "{retrieved_context} <</SYS>> " +\
+    "{user_message} [/INST]" if "Llama-2" in args.model_name_or_path else \
+    "USER: This might be useful to answer the following question: {retrieved_context} \n" +\
+    "{user_message} \n" +\
+    "ASSISTANT: "\
+
+    template_simple = \
+    "<s>[INST] <<SYS>> You are a helpful assistant who provides concise and accurate answers. <</SYS>>" +\
+    "{user_message} [/INST]" if "LLama-2" in args.model_name_or_path else \
+    "USER: {user_message} \n" +\
+    "ASSISTANT: "
 
     main(args)
