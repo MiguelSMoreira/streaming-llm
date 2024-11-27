@@ -16,16 +16,15 @@ from streaming_llm.enable_streaming_llm import enable_streaming_llm
 from retriever.retriever import Retriever
 from typing import Optional
 
-
-template_retriever = """
-<s>[INST] <<SYS>> You are a helpful assistant. Use the following information to answer the user's question. <</SYS>>
-{retrieved_context}
-
-USER: {user_message} [/INST]
+template_retriever = """\
+<s>[INST] <<SYS>> You are a helpful assistant who provides concise and accurate answers. The following context is relevant to the user's query: \
+{retrieved_context} <</SYS>> \
+{user_message} [/INST]\
 """
 
-template_simple = """
-<s>[INST] USER: {user_message} [/INST]
+template_simple = """\
+<s>[INST] <<SYS>> You are a helpful assistant who provides concise and accurate answers. <</SYS>> \
+{user_message} [/INST]\
 """
 
 @torch.no_grad()
@@ -71,8 +70,16 @@ def greedy_generate(model, tokenizer, input_ids, past_key_values, max_gen_len):
 
 
 @torch.no_grad()
-def streaming_inference(model, tokenizer, prompts, kv_cache=None, max_gen_len=1000, retriever:Optional[Retriever]=None, preamble=False):
-    past_key_values = None
+def streaming_inference(
+        model, 
+        tokenizer, 
+        prompts, 
+        kv_cache=None, 
+        max_gen_len=1000, 
+        retriever:Optional[Retriever]=None, 
+        preamble=False,
+        past_key_values = None
+    ):
     for idx, prompt in enumerate(prompts):
         if preamble:
             print(f"\n\nUSER: {prompt}")
@@ -101,6 +108,8 @@ def streaming_inference(model, tokenizer, prompts, kv_cache=None, max_gen_len=10
             retriever.add_to_contextwindow(prompt)
             retriever.add_to_contextwindow(output)
 
+    return past_key_values
+
 
 def main(args):
     model_name_or_path = args.model_name_or_path
@@ -119,6 +128,7 @@ def main(args):
 
     # Check the mode based on enable_interactive
     if args.enable_interactive:
+        past_key_values = None
         while True:
             # Get user input from the command line
             user_input = input("\n\nUSER (or 'exit' to quit): ")
@@ -127,8 +137,13 @@ def main(args):
                 break
 
             # Perform streaming inference for the user-provided input
-            streaming_inference(
-                model, tokenizer, [user_input], kv_cache, retriever=retriever
+            past_key_values = streaming_inference(
+                model, 
+                tokenizer, 
+                [user_input], 
+                kv_cache, 
+                retriever=retriever, 
+                past_key_values=past_key_values
             )
     else:
         test_filepath = os.path.join(args.data_root, "mt_bench.jsonl")
@@ -160,10 +175,11 @@ if __name__ == "__main__":
     parser.add_argument("--data_root", type=str, default="data/")
     parser.add_argument("--enable_streaming", action="store_true")
     parser.add_argument("--start_size", type=int, default=4)
-    parser.add_argument("--recent_size", type=int, default=2000)
+    parser.add_argument("--recent_size", type=int, default=4096)
     parser.add_argument("--chunk_size", type=int, default=200)
     parser.add_argument("--enable_interactive", action="store_true", default=False, help="Enable interactive input mode")
     parser.add_argument("--enable_retriever", action="store_true", default=False, help="Enable retrieval-augmented generation")
     args = parser.parse_args()
 
     main(args)
+
