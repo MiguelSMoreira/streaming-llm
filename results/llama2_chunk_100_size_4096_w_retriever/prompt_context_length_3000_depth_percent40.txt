@@ -1,0 +1,240 @@
+Loading model from meta-llama/Llama-2-7b-chat-hf ...
+StartRecentKVCache: 4, 4096
+Loading data from data/prompt_context_length_3000_depth_percent40.json ...
+
+
+USER: You are a helpful AI bot that answers questions for a user. Keep your response short and direct
+
+=== RETRIEVER RESULTS ===
+=== END RETRIEVER RESULTS ===
+
+ASSISTANT: Of course! I'm here to help. Please provide the question or topic you'd like me to assist you with, and I'll do my best to provide a concise and accurate answer.
+
+
+USER: July 2006I've discovered a handy test for figuring out what you're addicted
+to.  Imagine you were going to spend the weekend at a friend's house
+on a little island off the coast of Maine.  There are no shops on
+the island and you won't be able to leave while you're there.  Also,
+you've never been to this house before, so you can't assume it will
+have more than any house might.What, besides clothes and toiletries, do you make a point of packing?
+That's what you're addicted to.  For example, if you find yourself
+packing a bottle of vodka (just in case), you may want to stop and
+think about that.For me the list is four things: books, earplugs, a notebook, and a
+pen.There are other things I might bring if I thought of it, like music,
+or tea, but I can live without them.  I'm not so addicted to caffeine
+that I wouldn't risk the house not having any tea, just for a
+weekend.Quiet is another matter.  I realize it seems a bit eccentric to
+take earplugs on a trip to an island off the coast of Maine.  If
+anywhere should be quiet, that should.  But what if the person in
+the next room snored?  What if there was a kid playing basketball?
+(Thump, thump, thump... thump.)  Why risk it?  Earplugs are small.Sometimes I can think with noise.  If I already have momentum on
+some project, I can work in noisy places.  I can edit an essay or
+debug code in an airport.  But airports are not so bad: most of the
+noise is whitish.  I couldn't work with the sound of a sitcom coming
+through the wall, or a car in the street playing thump-thump music.And of course there's another kind of thinking, when you're starting
+something new, that requires complete quiet.   You never
+know when this will strike. It's just as well to carry plugs.The notebook and pen are professional equipment, as it were.  Though
+actually there is something druglike about them, in the sense that
+their main purpose is to make me feel better.  I hardly ever go
+back and read stuff I write down in notebooks.  It's just that if
+I can't write things down, worrying about remembering one idea gets
+in the way of having the next.  Pen and paper wick ideas.The best notebooks I've found are made by a company called Miquelrius.
+I use their smallest size, which is about 2.5 x 4 in.
+The secret to writing on such
+narrow pages is to break words only when you run out of space, like
+a Latin inscription.  I use the cheapest plastic Bic ballpoints,
+partly because their gluey ink doesn't seep through pages, and
+partly so I don't worry about losing them.I only started carrying a notebook about three years ago.  Before
+that I used whatever scraps of paper I could find.  But the problem
+with scraps of paper is that they're not ordered.  In a notebook
+you can guess what a scribble means by looking at the pages
+around it.  In the scrap era I was constantly finding notes I'd
+written years before that might say something I needed to remember,
+if I could only figure out what.As for books, I know the house would probably have something to
+read.  On the average trip I bring four books and only read one of
+them, because I find new books to read en route.  Really bringing
+books is insurance.I realize this dependence on books is not entirely good—that what
+I need them for is distraction.  The books I bring on trips are
+often quite virtuous, the sort of stuff that might be assigned
+reading in a college class.  But I know my motives aren't virtuous.
+I bring books because if the world gets boring I need to be able
+to slip into another distilled by some writer.  It's like eating
+jam when you know you should be eating fruit.There is a point where I'll do without books.  I was walking in
+some steep mountains once, and decided I'd rather just think, if I
+was bored, rather than carry a single unnecessary ounce.  It wasn't
+so bad.  I found I could entertain myself by having ideas instead
+of reading other people's.  If you stop eating jam, fruit starts
+to taste better.So maybe I'll try not bringing books on some fu
+
+=== RETRIEVER RESULTS ===
+=== END RETRIEVER RESULTS ===
+
+ASSISTANT: Based on the context provided, it seems that the person is addicted to packing the following four items when they go on a trip:
+
+1. Books: The person finds comfort in reading and often brings four books on a trip, even though they may only end up reading one of them. They recognize that their motive for bringing books is not entirely virtuous, as they are often looking for distraction rather than engaging in meaningful reading.
+2. Earplugs: The person values quiet and finds it difficult to focus in noisy environments. They bring earplugs to ensure that they can work or relax without distractions.
+3. A notebook and pen: The person finds it important to write down their thoughts and ideas as they come to them. They recognize that carrying a notebook and pen is a form of professional equipment, as it allows them to capture their ideas and make them more tangible.
+4. Music: The person does not specifically mention music as an item they pack, but they do mention that they could listen to music if they were bored on a trip.
+
+It's worth noting that the person recognizes that their dependence on these items is not entirely healthy and that they could try going without them on certain trips. They also recognize that there are times when they could use music or other forms of distraction to entertain themselves instead of relying on books.
+
+
+USER: ture trip.  They're
+going to have to pry the plugs out of my cold, dead ears, however.
+
+Want to start a startup?  Get funded by
+Y Combinator.
+
+
+
+
+March 2008, rev. June 2008Technology tends to separate normal from natural.  Our bodies
+weren't designed to eat the foods that people in rich countries eat, or
+to get so little exercise.  
+There may be a similar problem with the way we work: 
+a normal job may be as bad for us intellectually as white flour
+or sugar is for us physically.I began to suspect this after spending several years working 
+with startup founders.
+The best thing to do in San Francisco is eat a sandwich and sit in Dolores Park on a sunny day.
+  I've now worked with over 200 of them, and I've
+noticed a definite difference between programmers working on their
+own startups and those working for large organizations.
+I wouldn't say founders seem happier, necessarily;
+starting a startup can be very stressful. Maybe the best way to put
+it is to say that they're happier in the sense that your body is
+happier during a long run than sitting on a sofa eating
+doughnuts.Though they're statistically abnormal, startup founders seem to be
+working in a way that's more natural for humans.I was in Africa last year and saw a lot of animals in the wild that
+I'd only seen in zoos before. It was remarkable how different they
+seemed. Particularly lions. Lions in the wild seem about ten times
+more alive. They're like different animals. I suspect that working
+for oneself feels better to humans in much the same way that living
+in the wild must feel better to a wide-ranging predator like a lion.
+Life in a zoo is easier, but it isn't the life they were designed
+for.
+TreesWhat's so unnatural about working for a big company?  The root of
+the problem is that humans weren't meant to work in such large
+groups.Another thing you notice when you see animals in the wild is that
+each species thrives in groups of a certain size.  A herd of impalas
+might have 100 adults; baboons maybe 20; lions rarely 10.  Humans
+also seem designed to work in groups, and what I've read about
+hunter-gatherers accords with research on organizations and my own
+experience to suggest roughly what the ideal size is: groups of 8
+work well; by 20 they're getting hard to manage; and a group of 50
+is really unwieldy.
+[1]
+Whatever the upper limit is, we are clearly not meant to work in
+groups of several hundred.  And yet—for reasons having more
+to do with technology than human nature—a great many people
+work for companies with hundreds or thousands of employees.Companies know groups that large wouldn't work, so they divide
+themselves into units small enough to work together.  But to
+coordinate these they have to introduce something new: bosses.These smaller groups are always arranged in a tree structure.  Your
+boss is the point where your group attaches to the tree.  But when
+you use this trick for dividing a large group into smaller ones,
+something strange happens that I've never heard anyone mention
+explicitly.  In the group one level up from yours, your boss
+represents your entire group.  A group of 10 managers is not merely
+a group of 10 people working together in the usual way.  It's really
+a group of groups.  Which means for a group of 10 managers to work
+together as if they were simply a group of 10 individuals, the group
+working for each manager would have to work as if they were a single
+person—the workers and manager would each share only one
+person's worth of freedom between them.In practice a group of people are never able to act as if they were
+one person.  But in a large organization divided into groups in
+this way, the pressure is always in that direction.  Each group
+tries its best to work as if it were the small group of individuals
+that humans were designed to work in.  That was the point of creating
+it.  And when you propagate that constraint, the result is that
+each person gets freedom of action in inverse proportion to the
+size of the entire t
+
+=== RETRIEVER RESULTS ===
+=== END RETRIEVER RESULTS ===
+
+ASSISTANT: Based on the text provided, the author suggests that the traditional organizational structure of a tree-like hierarchy, with multiple layers of management, can be detrimental to employee productivity and happiness. The author argues that humans were not designed to work in large groups and that this structure can lead to a lack of autonomy and creativity among employees.
+
+The author suggests that the ideal size for a group of workers is around 8-10 individuals, as larger groups become difficult to manage. However, many organizations are structured with hundreds or thousands of employees, which can lead to a lack of autonomy and creativity among workers.
+
+To address this issue, organizations often divide larger groups into smaller units, such as teams or departments, with their own managers. However, this structure can create a hierarchy of managers, with each manager representing the entire group they oversee. This can lead to a situation where each group is trying to act as if it were a small, autonomous team, but is actually constrained by the larger organization.
+
+The author argues that this structure can lead to a situation where employees have less freedom of action than they would in a smaller group, as they are constrained by the needs of the larger organization. The author suggests that this can lead to a lack of creativity and productivity among employees, as they are not able to work in a way that is natural for humans.
+
+Overall, the author suggests that organizations should consider alternative structures that allow for more autonomy and creativity among employees, such as flat hierarchies or decentralized decision-making processes.
+
+
+USER: ree.
+[2]Anyone who's worked for a large organization has felt this.  You
+can feel the difference between working for a company with 100
+employees and one with 10,000, even if your group has only 10 people.
+Corn SyrupA group of 10 people within a large organization is a kind of fake
+tribe.  The number of people you interact with is about right.  But
+something is missing: individual initiative.  Tribes of hunter-gatherers
+have much more freedom.  The leaders have a little more power than other
+members of the tribe, but they don't generally tell them what to
+do and when the way a boss can.It's not your boss's fault.  The real problem is that in the group
+above you in the hierarchy, your entire group is one virtual person.
+Your boss is just the way that constraint is imparted to you.So working in a group of 10 people within a large organization feels
+both right and wrong at the same time.   On the surface it feels
+like the kind of group you're meant to work in, but something major
+is missing.  A job at a big company is like high fructose corn
+syrup: it has some of the qualities of things you're meant to like,
+but is disastrously lacking in others.Indeed, food is an excellent metaphor to explain what's wrong with
+the usual sort of job.For example, working for a big company is the default thing to do,
+at least for programmers.  How bad could it be?  Well, food shows
+that pretty clearly.  If you were dropped at a random point in
+America today, nearly all the food around you would be bad for you.
+Humans were not designed to eat white flour, refined sugar, high
+fructose corn syrup, and hydrogenated vegetable oil.  And yet if
+you analyzed the contents of the average grocery store you'd probably
+find these four ingredients accounted for most of the calories.
+"Normal" food is terribly bad for you.  The only people who eat
+what humans were actually designed to eat are a few Birkenstock-wearing
+weirdos in Berkeley.If "normal" food is so bad for us, why is it so common?  There are
+two main reasons. One is that it has more immediate appeal.  You
+may feel lousy an hour after eating that pizza, but eating the first
+couple bites feels great.  The other is economies of scale.
+Producing junk food scales; producing fresh vegetables doesn't.
+Which means (a) junk food can be very cheap, and (b) it's worth
+spending a lot to market it.If people have to choose between something that's cheap, heavily
+marketed, and appealing in the short term, and something that's
+expensive, obscure, and appealing in the long term, which do you
+think most will choose?It's the same with work.  The average MIT graduate wants to work
+at Google or Microsoft, because it's a recognized brand, it's safe,
+and they'll get paid a good salary right away.  It's the job
+equivalent of the pizza they had for lunch.  The drawbacks will
+only become apparent later, and then only in a vague sense of
+malaise.And founders and early employees of startups, meanwhile, are like
+the Birkenstock-wearing weirdos of Berkeley:  though a tiny minority
+of the population, they're the ones living as humans are meant to.
+In an artificial world, only extremists live naturally.
+ProgrammersThe restrictiveness of big company jobs is particularly hard on
+programmers, because the essence of programming is to build new
+things.  Sales people make much the same pitches every day; support
+people answer much the same questions; but once you've written a
+piece of code you don't need to write it again.  So a programmer
+working as programmers are meant to is always making new things.
+And when you're part of an organization whose structure gives each
+person freedom in inverse proportion to the size of the tree, you're
+going to face resistance when you do something new.This seems an inevitable consequence of bigness.  It's true even
+in the smartest companies.  I was talking recently to a founder who
+considered starting a startup right out of college, but went to
+work for Google instead because he thought
+
+=== RETRIEVER RESULTS ===
+=== END RETRIEVER RESULTS ===
+
+ASSISTANT: Based on the text provided, the author argues that the traditional organizational structure of a tree-like hierarchy, with a centralized decision-making process and multiple layers of management, is detrimental to employee productivity and happiness. The author suggests that this structure is particularly challenging for programmers, as it restricts their ability to create new things and be creative.
+
+The author uses the metaphor of food to explain the problem with traditional jobs, arguing that just as food that is bad for us (such as white flour, refined sugar, and high fructose corn syrup) is the default option in our society, traditional jobs are also the default option for programmers. The author suggests that programmers are like Birkenstock-wearing weirdos in Berkeley in that they are the only ones living as humans are meant to, while the majority of people are stuck in jobs that are not natural for them.
+
+The author also notes that the restrictiveness of big company jobs is particularly hard on programmers, as they are constantly faced with resistance when they try to do something new. The author suggests that this is an inevitable consequence of bigness, even in the smartest companies.
+
+Overall, the author argues that the traditional organizational structure of a tree-like hierarchy is not natural for humans and is detrimental to employee productivity and happiness, particularly for programmers. The author suggests that alternative structures, such as flat hierarchies or decentralized decision-making processes, may be more natural and productive for humans.
+
+
+USER: What is the best thing to do in San Francisco? Don't give information outside the document or repeat your findings
+
+=== RETRIEVER RESULTS ===
+=== END RETRIEVER RESULTS ===
+
+ASSISTANT: Based on the text provided, the best thing to do in San Francisco is to visit the Golden Gate Park.
