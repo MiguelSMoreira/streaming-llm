@@ -179,6 +179,7 @@ def main():
                 kv_cache=kv_cache,
                 retriever=retriever,
                 debug_retriever=args.debug_retriever,
+                preempt_retriever=args.preempt_retriever
             )
     else:
         # Load input from specified file path
