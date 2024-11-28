@@ -85,7 +85,8 @@ def streaming_inference(
     max_gen_len=1000,
     retriever=None,
     preamble=False,
-    debug_retriever=False
+    debug_retriever=False,
+    preempt_retriever=False
 ):
     past_key_values = None
     for idx, prompt in enumerate(prompts):
@@ -96,6 +97,8 @@ def streaming_inference(
             retriever_results = retriever.retrieve(prompt)
             if debug_retriever:
                 emit_retriever_results(retriever_results)
+            if preempt_retriever:
+                retriever.add_to_contextwindow(prompt)
             prompt = TEMPLATE_RETRIEVER.format(
                 retrieved_context=retriever_results, user_message=prompt
             )
@@ -107,6 +110,9 @@ def streaming_inference(
         input_ids = input_ids.to(model.device)
         seq_len = input_ids.shape[1]
 
+        if retriever and preempt_retriever:
+            retriever.add_to_contextwindow(prompt)
+
         if kv_cache is not None:
             space_needed = seq_len + max_gen_len
             past_key_values = kv_cache.evict_for_space(past_key_values, space_needed)
@@ -116,7 +122,9 @@ def streaming_inference(
         )
 
         # Store with retriever
-        if retriever:
+        if retriever and preempt_retriever:
+            retriever.add_to_contextwindow(output)
+        elif retriever:
             retriever.add_to_contextwindow(prompt)
             retriever.add_to_contextwindow(output)
 
@@ -188,6 +196,7 @@ def main():
             retriever=retriever,
             preamble=True,
             debug_retriever=args.debug_retriever,
+            preempt_retriever=args.preempt_retriever,
         )
 
 
@@ -199,6 +208,7 @@ if __name__ == "__main__":
     parser.add_argument("--data_root", type=str, default="data/")
     parser.add_argument("--enable_streaming", action="store_true")
     parser.add_argument("--debug_retriever", action="store_true")
+    parser.add_argument("--preempt_retriever", action="store_true")
     parser.add_argument(
         "--enable_retriever",
         action="store_true",
