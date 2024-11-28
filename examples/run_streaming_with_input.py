@@ -110,9 +110,6 @@ def streaming_inference(
         input_ids = input_ids.to(model.device)
         seq_len = input_ids.shape[1]
 
-        if retriever and preempt_retriever:
-            retriever.add_to_contextwindow(prompt)
-
         if kv_cache is not None:
             space_needed = seq_len + max_gen_len
             past_key_values = kv_cache.evict_for_space(past_key_values, space_needed)
