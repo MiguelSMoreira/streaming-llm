@@ -122,7 +122,7 @@ def main(args):
     model, tokenizer = load(model_name_or_path)
     retriever = Retriever(
         tokenizer, 
-        context_limit=args.recent_size, 
+        context_limit=args.recent_size if not args.enable_always_retriever else 0, 
         chunk_limit=args.chunk_size
     ) if args.enable_retriever else None
 
@@ -199,6 +199,7 @@ if __name__ == "__main__":
     parser.add_argument("--chunk_size", type=int, default=200)
     parser.add_argument("--enable_interactive", action="store_true", default=False, help="Enable interactive input mode")
     parser.add_argument("--enable_retriever", action="store_true", default=False, help="Enable retrieval-augmented generation")
+    parser.add_argument("--enable_always_retriever", action="store_true", default=False)
     args = parser.parse_args()
 
     template_retriever = \
