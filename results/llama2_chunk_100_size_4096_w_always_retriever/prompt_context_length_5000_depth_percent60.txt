@@ -1,0 +1,468 @@
+Loading model from meta-llama/Llama-2-7b-chat-hf ...
+StartRecentKVCache: 4, 4096
+Loading data from data/prompt_context_length_5000_depth_percent60.json ...
+
+
+USER: You are a helpful AI bot that answers questions for a user. Keep your response short and direct
+
+=== RETRIEVER RESULTS ===
+=== END RETRIEVER RESULTS ===
+
+ASSISTANT: Of course! I'm here to help. Please provide the question or topic you'd like me to assist you with, and I'll do my best to provide a concise and accurate answer.
+
+
+USER: July 2006I've discovered a handy test for figuring out what you're addicted
+to.  Imagine you were going to spend the weekend at a friend's house
+on a little island off the coast of Maine.  There are no shops on
+the island and you won't be able to leave while you're there.  Also,
+you've never been to this house before, so you can't assume it will
+have more than any house might.What, besides clothes and toiletries, do you make a point of packing?
+That's what you're addicted to.  For example, if you find yourself
+packing a bottle of vodka (just in case), you may want to stop and
+think about that.For me the list is four things: books, earplugs, a notebook, and a
+pen.There are other things I might bring if I thought of it, like music,
+or tea, but I can live without them.  I'm not so addicted to caffeine
+that I wouldn't risk the house not having any tea, just for a
+weekend.Quiet is another matter.  I realize it seems a bit eccentric to
+take earplugs on a trip to an island off the coast of Maine.  If
+anywhere should be quiet, that should.  But what if the person in
+the next room snored?  What if there was a kid playing basketball?
+(Thump, thump, thump... thump.)  Why risk it?  Earplugs are small.Sometimes I can think with noise.  If I already have momentum on
+some project, I can work in noisy places.  I can edit an essay or
+debug code in an airport.  But airports are not so bad: most of the
+noise is whitish.  I couldn't work with the sound of a sitcom coming
+through the wall, or a car in the street playing thump-thump music.And of course there's another kind of thinking, when you're starting
+something new, that requires complete quiet.   You never
+know when this will strike. It's just as well to carry plugs.The notebook and pen are professional equipment, as it were.  Though
+actually there is something druglike about them, in the sense that
+their main purpose is to make me feel better.  I hardly ever go
+back and read stuff I write down in notebooks.  It's just that if
+I can't write things down, worrying about remembering one idea gets
+in the way of having the next.  Pen and paper wick ideas.The best notebooks I've found are made by a company called Miquelrius.
+I use their smallest size, which is about 2.5 x 4 in.
+The secret to writing on such
+narrow pages is to break words only when you run out of space, like
+a Latin inscription.  I use the cheapest plastic Bic ballpoints,
+partly because their gluey ink doesn't seep through pages, and
+partly so I don't worry about losing them.I only started carrying a notebook about three years ago.  Before
+that I used whatever scraps of paper I could find.  But the problem
+with scraps of paper is that they're not ordered.  In a notebook
+you can guess what a scribble means by looking at the pages
+around it.  In the scrap era I was constantly finding notes I'd
+written years before that might say something I needed to remember,
+if I could only figure out what.As for books, I know the house would probably have something to
+read.  On the average trip I bring four books and only read one of
+them, because I find new books to read en route.  Really bringing
+books is insurance.I realize this dependence on books is not entirely good—that what
+I need them for is distraction.  The books I bring on trips are
+often quite virtuous, the sort of stuff that might be assigned
+reading in a college class.  But I know my motives aren't virtuous.
+I bring books because if the world gets boring I need to be able
+to slip into another distilled by some writer.  It's like eating
+jam when you know you should be eating fruit.There is a point where I'll do without books.  I was walking in
+some steep mountains once, and decided I'd rather just think, if I
+was bored, rather than carry a single unnecessary ounce.  It wasn't
+so bad.  I found I could entertain myself by having ideas instead
+of reading other people's.  If you stop eating jam, fruit starts
+to taste better.So maybe I'll try not bringing books on some future trip.  They're
+going to have to pry the plugs out of my cold, dead ears, however.
+
+Want to start a startup?  Get funded by
+Y Combinator.
+
+
+
+
+March 2008, rev. June 2008Tec
+
+=== RETRIEVER RESULTS ===
+answer.
+<s>[INST] <<SYS>> You are a helpful assistant who provides concise and accurate answers. The following context is relevant to the user's query: [] <</SYS>> You are a helpful AI bot that answers questions for a user. Keep your response short and direct [/INST]
+=== END RETRIEVER RESULTS ===
+
+ASSISTANT: Based on the context provided, it seems that you are asking about the things that the author of the article finds addictive. The author mentions that they are addicted to four things:
+
+1. Books: The author finds comfort in reading and often brings four books on a trip, even though they may only end up reading one of them.
+2. Earplugs: The author values quiet and finds it difficult to focus in noisy environments. They bring earplugs to ensure that they can work in peace.
+3. A notebook and pen: The author finds it helpful to write down their thoughts and ideas, and carrying a notebook and pen allows them to do so.
+4. Music: The author mentions that they are not addicted to music, but they do find it helpful to listen to when working.
+
+It's worth noting that the author's addiction to these things is not necessarily a bad thing, as it helps them to focus and be productive.
+
+
+USER: hnology tends to separate normal from natural.  Our bodies
+weren't designed to eat the foods that people in rich countries eat, or
+to get so little exercise.  
+There may be a similar problem with the way we work: 
+a normal job may be as bad for us intellectually as white flour
+or sugar is for us physically.I began to suspect this after spending several years working 
+with startup founders.  I've now worked with over 200 of them, and I've
+noticed a definite difference between programmers working on their
+own startups and those working for large organizations.
+I wouldn't say founders seem happier, necessarily;
+starting a startup can be very stressful. Maybe the best way to put
+it is to say that they're happier in the sense that your body is
+happier during a long run than sitting on a sofa eating
+doughnuts.Though they're statistically abnormal, startup founders seem to be
+working in a way that's more natural for humans.I was in Africa last year and saw a lot of animals in the wild that
+I'd only seen in zoos before. It was remarkable how different they
+seemed. Particularly lions. Lions in the wild seem about ten times
+more alive. They're like different animals. I suspect that working
+for oneself feels better to humans in much the same way that living
+in the wild must feel better to a wide-ranging predator like a lion.
+Life in a zoo is easier, but it isn't the life they were designed
+for.
+TreesWhat's so unnatural about working for a big company?  The root of
+the problem is that humans weren't meant to work in such large
+groups.Another thing you notice when you see animals in the wild is that
+each species thrives in groups of a certain size.  A herd of impalas
+might have 100 adults; baboons maybe 20; lions rarely 10.  Humans
+also seem designed to work in groups, and what I've read about
+hunter-gatherers accords with research on organizations and my own
+experience to suggest roughly what the ideal size is: groups of 8
+work well; by 20 they're getting hard to manage; and a group of 50
+is really unwieldy.
+[1]
+Whatever the upper limit is, we are clearly not meant to work in
+groups of several hundred.  And yet—for reasons having more
+to do with technology than human nature—a great many people
+work for companies with hundreds or thousands of employees.Companies know groups that large wouldn't work, so they divide
+themselves into units small enough to work together.  But to
+coordinate these they have to introduce something new: bosses.These smaller groups are always arranged in a tree structure.  Your
+boss is the point where your group attaches to the tree.  But when
+you use this trick for dividing a large group into smaller ones,
+something strange happens that I've never heard anyone mention
+explicitly.  In the group one level up from yours, your boss
+represents your entire group.  A group of 10 managers is not merely
+a group of 10 people working together in the usual way.  It's really
+a group of groups.  Which means for a group of 10 managers to work
+together as if they were simply a group of 10 individuals, the group
+working for each manager would have to work as if they were a single
+person—the workers and manager would each share only one
+person's worth of freedom between them.In practice a group of people are never able to act as if they were
+one person.  But in a large organization divided into groups in
+this way, the pressure is always in that direction.  Each group
+tries its best to work as if it were the small group of individuals
+that humans were designed to work in.  That was the point of creating
+it.  And when you propagate that constraint, the result is that
+each person gets freedom of action in inverse proportion to the
+size of the entire tree.
+[2]Anyone who's worked for a large organization has felt this.  You
+can feel the difference between working for a company with 100
+employees and one with 10,000, even if your group has only 10 people.
+Corn SyrupA group of 10 people within a large organization is a kind of fake
+tribe.  The number of people you interact with is about right.  But
+something is missing: individual initiative.  Tribes of hunter-gatherers
+have much more freedom.
+
+=== RETRIEVER RESULTS ===
+productive.
+.  They're
+going to have to pry the plugs out of my cold, dead ears, however.
+
+Want to start a startup?  Get funded by
+Y Combinator.
+
+
+
+
+March 2008, rev. June 2008Tec [/INST]
+=== END RETRIEVER RESULTS ===
+
+ASSISTANT: The article argues that the traditional structure of large organizations, with their hierarchical trees of bosses and departments, is unnatural for humans. The author suggests that humans are designed to work in smaller groups, similar to the way hunter-gatherer tribes function. The article highlights several points:
+
+1. Humans were not meant to work in large groups: The author notes that humans were not designed to work in groups of hundreds or thousands, like those found in large organizations.
+2. The ideal group size: The article suggests that groups of 8-10 people are the most effective size for productivity and collaboration, with larger groups becoming difficult to manage.
+3. The tree structure of organizations: Large organizations are often divided into smaller groups, which are arranged in a tree structure, with each group having a boss who represents the entire group.
+4. Lack of individual initiative: The author argues that the hierarchical structure of large organizations can stifle individual initiative and creativity, as people are expected to work within their assigned roles and follow the instructions of their superiors.
+5. Comparison to hunter-gatherer tribes: The article notes that hunter-gatherer tribes have more freedom and are more productive than large organizations, as they are smaller and more agile, and individuals are able to take on a wider range of roles and responsibilities.
+
+Overall, the article suggests that large organizations are not natural for humans and that they can stifle creativity and productivity. The author argues that smaller, more agile organizations are more likely to be successful and fulfilling for their employees.
+
+
+USER:   The leaders have a little more power than other
+members of the tribe, but they don't generally tell them what to
+do and when the way a boss can.It's not your boss's fault.  The real problem is that in the group
+above you in the hierarchy, your entire group is one virtual person.
+Your boss is just the way that constraint is imparted to you.So working in a group of 10 people within a large organization feels
+both right and wrong at the same time.   On the surface it feels
+like the kind of group you're meant to work in, but something major
+is missing.  A job at a big company is like high fructose corn
+syrup: it has some of the qualities of things you're meant to like,
+but is disastrously lacking in others.Indeed, food is an excellent metaphor to explain what's wrong with
+the usual sort of job.For example, working for a big company is the default thing to do,
+at least for programmers.  How bad could it be?  Well, food shows
+that pretty clearly.  If you were dropped at a random point in
+America today, nearly all the food around you would be bad for you.
+Humans were not designed to eat white flour, refined sugar, high
+fructose corn syrup, and hydrogenated vegetable oil.  And yet if
+you analyzed the contents of the average grocery store you'd probably
+find these four ingredients accounted for most of the calories.
+"Normal" food is terribly bad for you.  The only people who eat
+what humans were actually designed to eat are a few Birkenstock-wearing
+weirdos in Berkeley.If "normal" food is so bad for us, why is it so common?  There are
+two main reasons. One is that it has more immediate appeal.  You
+may feel lousy an hour after eating that pizza, but eating the first
+couple bites feels great.  The other is economies of scale.
+Producing junk food scales; producing fresh vegetables doesn't.
+Which means (a) junk food can be very cheap, and (b) it's worth
+spending a lot to market it.If people have to choose between something that's cheap, heavily
+marketed, and appealing in the short term, and something that's
+expensive, obscure, and appealing in the long term, which do you
+think most will choose?It's the same with work.  The average MIT graduate wants to work
+at Google or Microsoft, because it's a recognized brand, it's safe,
+and they'll get paid a good salary right away.  It's the job
+equivalent of the pizza they had for lunch.  The drawbacks will
+only become apparent later, and then only in a vague sense of
+malaise.And founders and early employees of startups, meanwhile, are like
+the Birkenstock-wearing weirdos of Berkeley:  though a tiny minority
+of the population, they're the ones living as humans are meant to.
+In an artificial world, only extremists live naturally.
+ProgrammersThe restrictiveness of big company jobs is particularly hard on
+programmers, because the essence of programming is to build new
+things.  Sales people make much the same pitches every day; support
+people answer much the same questions; but once you've written a
+piece of code you don't need to write it again.  So a programmer
+working as programmers are meant to is always making new things.
+And when you're part of an organization whose structure gives each
+person freedom in inverse proportion to the size of the tree, you're
+going to face resistance when you do something new.This seems an inevitable consequence of bigness.  It's true even
+in the smartest companies.  I was talking recently to a founder who
+considered starting a startup right out of college, but went to
+work for Google instead because he thought he'd learn more there.
+He didn't learn as much as he expected.  Programmers learn by doing,
+and most of the things he wanted to do, he couldn't—sometimes
+because the company wouldn't let him, but often because the company's
+code wouldn't let him.
+The best thing to do in San Francisco is eat a sandwich and sit in Dolores Park on a sunny day.
+  Between the drag of legacy code, the overhead
+of doing development in such a large organization, and the restrictions
+imposed by interfaces owned by other groups, he could only try a
+fraction of the things he would have liked to.  He said he has
+learned much more in his own s
+
+=== RETRIEVER RESULTS ===
+for reasons having more
+to do with technology than human nature—a great many people
+work for companies with hundreds or thousands of employees.Companies know groups that large wouldn't work, so they divide
+themselves into units small enough to work together.  But to
+coordinate these they have to introduce something new: bosses.These smaller groups are always arranged in a tree structure.  Your
+boss is the point where your group attaches to the
+difference between working for a company with 100
+employees and one with 10,000, even if your group has only 10 people.
+Corn SyrupA group of 10 people within a large organization is a kind of fake
+tribe.  The number of people you interact with is about right.  But
+something is missing: individual initiative.  Tribes of hunter-gatherers
+have much more freedom
+=== END RETRIEVER RESULTS ===
+
+ASSISTANT: The article argues that the traditional structure of large organizations, with their hierarchical trees and bosses, is unnatural for humans. It suggests that working in a group of 10 people within a large organization feels both right and wrong at the same time, as it has some of the qualities of a natural tribe but is missing something important. The article uses the metaphor of food to explain the problem, noting that just as food that is bad for us is common because it has more immediate appeal and economies of scale, the default job for programmers is also bad for them because it lacks the freedom and autonomy that they need to do their best work. The article highlights the particular challenges of working in a large organization for programmers, who learn by doing and are often constrained by legacy code, interfaces owned by other groups, and the overhead of doing development in a large organization. It concludes that the best thing to do in San Francisco is to eat a sandwich and sit in Dolores Park on a sunny day, rather than working in a large organization.
+
+
+USER: tartup, despite the fact that he has
+to do all the company's errands as well as programming, because at
+least when he's programming he can do whatever he wants.An obstacle downstream propagates upstream.  If you're not allowed
+to implement new ideas, you stop having them.  And vice versa: when
+you can do whatever you want, you have more ideas about what to do.
+So working for yourself makes your brain more powerful in the same
+way a low-restriction exhaust system makes an engine more powerful.Working for yourself doesn't have to mean starting a startup, of
+course.  But a programmer deciding between a regular job at a big
+company and their own startup is probably going to learn more doing
+the startup.You can adjust the amount of freedom you get by scaling the size
+of company you work for.  If you start the company, you'll have the
+most freedom.  If you become one of the first 10 employees you'll
+have almost as much freedom as the founders.  Even a company with
+100 people will feel different from one with 1000.Working for a small company doesn't ensure freedom.  The tree
+structure of large organizations sets an upper bound on freedom,
+not a lower bound.  The head of a small company may still choose
+to be a tyrant.  The point is that a large organization is compelled
+by its structure to be one.
+ConsequencesThat has real consequences for both organizations and individuals.
+One is that companies will inevitably slow down as they grow larger,
+no matter how hard they try to keep their startup mojo.  It's a
+consequence of the tree structure that every large organization is
+forced to adopt.Or rather, a large organization could only avoid slowing down if
+they avoided tree structure.  And since human nature limits the
+size of group that can work together, the only way I can imagine
+for larger groups to avoid tree structure would be to have no
+structure: to have each group actually be independent, and to work
+together the way components of a market economy do.That might be worth exploring.  I suspect there are already some
+highly partitionable businesses that lean this way.  But I don't
+know any technology companies that have done it.There is one thing companies can do short of structuring themselves
+as sponges:  they can stay small.  If I'm right, then it really
+pays to keep a company as small as it can be at every stage.
+Particularly a technology company.  Which means it's doubly important
+to hire the best people.  Mediocre hires hurt you twice: they get
+less done, but they also make you big, because you need more of
+them to solve a given problem.For individuals the upshot is the same: aim small.  It will always
+suck to work for large organizations, and the larger the organization,
+the more it will suck.In an essay I wrote a couple years ago 
+I advised graduating seniors
+to work for a couple years for another company before starting their
+own.  I'd modify that now.  Work for another company if you want
+to, but only for a small one, and if you want to start your own
+startup, go ahead.The reason I suggested college graduates not start startups immediately
+was that I felt most would fail.  And they will.  But ambitious
+programmers are better off doing their own thing and failing than
+going to work at a big company.  Certainly they'll learn more.  They
+might even be better off financially.  A lot of people in their
+early twenties get into debt, because their expenses grow even
+faster than the salary that seemed so high when they left school.
+At least if you start a startup and fail your net worth will be
+zero rather than negative.  
+[3]We've now funded so many different types of founders that we have
+enough data to see patterns, and there seems to be no benefit from
+working for a big company.  The people who've worked for a few years
+do seem better than the ones straight out of college, but only
+because they're that much older.The people who come to us from big companies often seem kind of
+conservative.  It's hard to say how much is because big companies
+made them that way, and how much is the natural conservatism that
+made them work for the big companies in the first place.  But
+certainly a lar
+
+=== RETRIEVER RESULTS ===
+and then only in a vague sense of
+malaise.And founders and early employees of startups, meanwhile, are like
+the Birkenstock-wearing weirdos of Berkeley:  though a tiny minority
+of the population, they're the ones living as humans are meant to.
+In an artificial world, only extremists live naturally.
+ProgrammersThe restrictiveness of big company jobs is particularly hard on
+programmers, because the essence of
+us physically.I began to suspect this after spending several years working 
+with startup founders.  I've now worked with over 200 of them, and I've
+noticed a definite difference between programmers working on their
+own startups and those working for large organizations.
+I wouldn't say founders seem happier, necessarily;
+starting a startup can be very stressful. Maybe the best way to put
+it is to say
+=== END RETRIEVER RESULTS ===
+
+ASSISTANT: The article discusses the impact of company size on the freedom and creativity of programmers. The author argues that as a company grows larger, it becomes more restrictive and less conducive to innovation. The author suggests that programmers working for a small company have more freedom and are more likely to come up with new ideas, while those working for a large company are more likely to be constrained by the company's structure and culture.
+
+The author notes that the tree-like structure of large organizations sets an upper bound on freedom, and that even small companies can have a restrictive structure. The article suggests that the only way for larger groups to avoid this restriction is to have no structure, or to work together like components of a market economy.
+
+The author advises programmers to aim small and work for a small company if they want to be more creative and have more freedom. The article also suggests that working for a small company can be more financially beneficial for programmers, as they are less likely to get into debt.
+
+The article concludes that there is no benefit to working for a big company, and that the people who have worked for a few years before starting their own startup are better off. The author notes that the people who come from big companies often seem conservative, and that it's hard to say how much of this is due to the company's culture and how much is due to the individual's natural conservatism.
+
+
+USER: ge part of it is learned.  I know because I've seen
+it burn off.Having seen that happen so many times is one of the things that
+convinces me that working for oneself, or at least for a small
+group, is the natural way for programmers to live.  Founders arriving
+at Y Combinator often have the downtrodden air of refugees.  Three
+months later they're transformed: they have so much more 
+confidence
+that they seem as if they've grown several inches taller. 
+[4]
+Strange as this sounds, they seem both more worried and happier at the same
+time.  Which is exactly how I'd describe the way lions seem in the
+wild.Watching employees get transformed into founders makes it clear
+that the difference between the two is due mostly to environment—and
+in particular that the environment in big companies is toxic to
+programmers.   In the first couple weeks of working on their own
+startup they seem to come to life, because finally they're working
+the way people are meant to.Notes[1]
+When I talk about humans being meant or designed to live a
+certain way, I mean by evolution.[2]
+It's not only the leaves who suffer.  The constraint propagates
+up as well as down.  So managers are constrained too; instead of
+just doing things, they have to act through subordinates.[3]
+Do not finance your startup with credit cards.  Financing a
+startup with debt is usually a stupid move, and credit card debt
+stupidest of all.  Credit card debt is a bad idea, period.  It is
+a trap set by evil companies for the desperate and the foolish.[4]
+The founders we fund used to be younger (initially we encouraged
+undergrads to apply), and the first couple times I saw this I used
+to wonder if they were actually getting physically taller.Thanks to Trevor Blackwell, Ross Boucher, Aaron Iba, Abby
+Kirigin, Ivan Kirigin, Jessica Livingston, and Robert Morris for
+reading drafts of this.April 2004To the popular press, "hacker" means someone who breaks
+into computers.  Among programmers it means a good programmer.
+But the two meanings are connected.  To programmers,
+"hacker" connotes mastery in the most literal sense: someone
+who can make a computer do what he wants—whether the computer
+wants to or not.To add to the confusion, the noun "hack" also has two senses.  It can
+be either a compliment or an insult.  It's called a hack when
+you do something in an ugly way.  But when you do something
+so clever that you somehow beat the system, that's also
+called a hack.  The word is used more often in the former than
+the latter sense, probably because ugly solutions are more
+common than brilliant ones.Believe it or not, the two senses of "hack" are also
+connected.  Ugly and imaginative solutions have something in
+common: they both break the rules.  And there is a gradual
+continuum between rule breaking that's merely ugly (using
+duct tape to attach something to your bike) and rule breaking
+that is brilliantly imaginative (discarding Euclidean space).Hacking predates computers.  When he
+was working on the Manhattan Project, Richard Feynman used to
+amuse himself by breaking into safes containing secret documents.
+This tradition continues today.
+When we were in grad school, a hacker friend of mine who spent too much
+time around MIT had
+his own lock picking kit.
+(He now runs a hedge fund, a not unrelated enterprise.)It is sometimes hard to explain to authorities why one would
+want to do such things.
+Another friend of mine once got in trouble with the government for
+breaking into computers.  This had only recently been declared
+a crime, and the FBI found that their usual investigative
+technique didn't work.  Police investigation apparently begins with
+a motive.  The usual motives are few: drugs, money, sex,
+revenge.  Intellectual curiosity was not one of the motives on
+the FBI's list.  Indeed, the whole concept seemed foreign to
+them.Those in authority tend to be annoyed by hackers'
+general attitude of disobedience.  But that disobedience is
+a byproduct of the qualities that make them good programmers.
+They may laugh at the CEO when he talks in generic corporate
+newspeech, but they also laugh at someone who tells them
+a certain problem can't be solved.
+Suppress 
+
+=== RETRIEVER RESULTS ===
+and then only in a vague sense of
+malaise.And founders and early employees of startups, meanwhile, are like
+the Birkenstock-wearing weirdos of Berkeley:  though a tiny minority
+of the population, they're the ones living as humans are meant to.
+In an artificial world, only extremists live naturally.
+ProgrammersThe restrictiveness of big company jobs is particularly hard on
+programmers, because the essence of
+. Particularly lions. Lions in the wild seem about ten times
+more alive. They're like different animals. I suspect that working
+for oneself feels better to humans in much the same way that living
+in the wild must feel better to a wide-ranging predator like a lion.
+Life in a zoo is easier, but it isn't the life they were designed
+for.
+TreesWhat's so unnatural about working for a
+=== END RETRIEVER RESULTS ===
+
+ASSISTANT: The article discusses the nature of programmers and the impact of working for a large company on their well-being. The author argues that programmers are naturally inclined to live and work in a certain way, and that the restrictive environment of a large company can stifle their creativity and happiness. The author uses the metaphor of lions in the wild to describe the difference between living in a natural environment and in a zoo.
+
+The article highlights the following points:
+
+1. Programmers are naturally inclined to live and work in a certain way, and the restrictive environment of a large company can stifle their creativity and happiness.
+2. The author uses the metaphor of lions in the wild to describe the difference between living in a natural environment and in a zoo.
+3. The article notes that the constraint propagates up as well as down in a large company, affecting both managers and employees.
+4. The author advises against financing a startup with credit cards, as it is a bad idea and can lead to debt.
+5. The article highlights the connection between the two senses of the word "hack," which can refer to both an ugly and an imaginative solution, and notes that both senses are connected to breaking the rules.
+6. The article notes that hacking predates computers and that it has a long tradition in the tech industry.
+7. The author suggests that the disobedience of hackers is a byproduct of the qualities that make them good programmers, and that they may laugh at the CEO when he talks in generic corporate newspeech, but they also laugh at someone who tells them a certain problem can't be solved.
+
+
+USER: What is the best thing to do in San Francisco? Don't give information outside the document or repeat your findings
+
+=== RETRIEVER RESULTS ===
+he wanted to do, he couldn't—sometimes
+because the company wouldn't let him, but often because the company's
+code wouldn't let him.
+The best thing to do in San Francisco is eat a sandwich and sit in Dolores Park on a sunny day.
+  Between the drag of legacy code, the overhead
+of doing development in such a large organization, and the restrictions
+imposed by interfaces owned by other groups, he could only
+finding notes I'd
+written years before that might say something I needed to remember,
+if I could only figure out what.As for books, I know the house would probably have something to
+read.  On the average trip I bring four books and only read one of
+them, because I find new books to read en route.  Really bringing
+books is insurance.I realize this dependence on books is not entirely good—that what
+I need them for is
+=== END RETRIEVER RESULTS ===
+
+ASSISTANT: Based on the context provided, the best thing to do in San Francisco is to eat a sandwich and sit in Dolores Park on a sunny day.

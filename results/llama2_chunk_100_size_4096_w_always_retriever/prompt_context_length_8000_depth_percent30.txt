@@ -1,0 +1,734 @@
+Loading model from meta-llama/Llama-2-7b-chat-hf ...
+StartRecentKVCache: 4, 4096
+Loading data from data/prompt_context_length_8000_depth_percent30.json ...
+
+
+USER: You are a helpful AI bot that answers questions for a user. Keep your response short and direct
+
+=== RETRIEVER RESULTS ===
+=== END RETRIEVER RESULTS ===
+
+ASSISTANT: Of course! I'm here to help. Please provide the question or topic you'd like me to assist you with, and I'll do my best to provide a concise and accurate answer.
+
+
+USER: July 2006I've discovered a handy test for figuring out what you're addicted
+to.  Imagine you were going to spend the weekend at a friend's house
+on a little island off the coast of Maine.  There are no shops on
+the island and you won't be able to leave while you're there.  Also,
+you've never been to this house before, so you can't assume it will
+have more than any house might.What, besides clothes and toiletries, do you make a point of packing?
+That's what you're addicted to.  For example, if you find yourself
+packing a bottle of vodka (just in case), you may want to stop and
+think about that.For me the list is four things: books, earplugs, a notebook, and a
+pen.There are other things I might bring if I thought of it, like music,
+or tea, but I can live without them.  I'm not so addicted to caffeine
+that I wouldn't risk the house not having any tea, just for a
+weekend.Quiet is another matter.  I realize it seems a bit eccentric to
+take earplugs on a trip to an island off the coast of Maine.  If
+anywhere should be quiet, that should.  But what if the person in
+the next room snored?  What if there was a kid playing basketball?
+(Thump, thump, thump... thump.)  Why risk it?  Earplugs are small.Sometimes I can think with noise.  If I already have momentum on
+some project, I can work in noisy places.  I can edit an essay or
+debug code in an airport.  But airports are not so bad: most of the
+noise is whitish.  I couldn't work with the sound of a sitcom coming
+through the wall, or a car in the street playing thump-thump music.And of course there's another kind of thinking, when you're starting
+something new, that requires complete quiet.   You never
+know when this will strike. It's just as well to carry plugs.The notebook and pen are professional equipment, as it were.  Though
+actually there is something druglike about them, in the sense that
+their main purpose is to make me feel better.  I hardly ever go
+back and read stuff I write down in notebooks.  It's just that if
+I can't write things down, worrying about remembering one idea gets
+in the way of having the next.  Pen and paper wick ideas.The best notebooks I've found are made by a company called Miquelrius.
+I use their smallest size, which is about 2.5 x 4 in.
+The secret to writing on such
+narrow pages is to break words only when you run out of space, like
+a Latin inscription.  I use the cheapest plastic Bic ballpoints,
+partly because their gluey ink doesn't seep through pages, and
+partly so I don't worry about losing them.I only started carrying a notebook about three years ago.  Before
+that I used whatever scraps of paper I could find.  But the problem
+with scraps of paper is that they're not ordered.  In a notebook
+you can guess what a scribble means by looking at the pages
+around it.  In the scrap era I was constantly finding notes I'd
+written years before that might say something I needed to remember,
+if I could only figure out what.As for books, I know the house would probably have something to
+read.  On the average trip I bring four books and only read one of
+them, because I find new books to read en route.  Really bringing
+books is insurance.I realize this dependence on books is not entirely good—that what
+I need them for is distraction.  The books I bring on trips are
+often quite virtuous, the sort of stuff that might be assigned
+reading in a college class.  But I know my motives aren't virtuous.
+I bring books because if the world gets boring I need to be able
+to slip into another distilled by some writer.  It's like eating
+jam when you know you should be eating fruit.There is a point where I'll do without books.  I was walking in
+some steep mountains once, and decided I'd rather just think, if I
+was bored, rather than carry a single unnecessary ounce.  It wasn't
+so bad.  I found I could entertain myself by having ideas instead
+of reading other people's.  If you stop eating jam, fruit starts
+to taste better.So maybe I'll try not bringing books on some future trip.  They're
+going to have to pry the plugs out of my cold, dead ears, however.
+
+Want to start a startup?  Get funded by
+Y Combinator.
+
+
+
+
+March 2008, rev. June 2008Technology tends to separate normal from natural.  Our bodies
+weren't designed t
+
+=== RETRIEVER RESULTS ===
+answer.
+<s>[INST] <<SYS>> You are a helpful assistant who provides concise and accurate answers. The following context is relevant to the user's query: [] <</SYS>> You are a helpful AI bot that answers questions for a user. Keep your response short and direct [/INST]
+=== END RETRIEVER RESULTS ===
+
+ASSISTANT: Based on the context provided, it seems that you are asking about the things that a person might pack for a weekend getaway to an island. The writer of the passage suggests that the following items are essential for them:
+
+1. Books: The writer brings four books on average, but only reads one of them. They find new books to read en route and bring them as insurance in case the house doesn't have any reading material.
+2. Earplugs: The writer values quiet and finds it essential to pack earplugs to block out any noise that might disturb their thinking.
+3. A notebook and pen: The writer finds it helpful to write down ideas and thoughts in a notebook, which they use as professional equipment.
+4. A small bottle of vodka (just in case): The writer mentions that they might bring a bottle of vodka, but they don't rely on it. They mention that they could entertain themselves by having ideas instead of reading other people's.
+
+The writer also mentions that they used to bring scraps of paper instead of a notebook, but found it difficult to decipher their own notes. They prefer to use a notebook because it allows them to guess what a scribble means by looking at the pages around it.
+
+
+USER: o eat the foods that people in rich countries eat, or
+to get so little exercise.  
+There may be a similar problem with the way we work: 
+a normal job may be as bad for us intellectually as white flour
+or sugar is for us physically.I began to suspect this after spending several years working 
+with startup founders.  I've now worked with over 200 of them, and I've
+noticed a definite difference between programmers working on their
+own startups and those working for large organizations.
+I wouldn't say founders seem happier, necessarily;
+starting a startup can be very stressful. Maybe the best way to put
+it is to say that they're happier in the sense that your body is
+happier during a long run than sitting on a sofa eating
+doughnuts.Though they're statistically abnormal, startup founders seem to be
+working in a way that's more natural for humans.I was in Africa last year and saw a lot of animals in the wild that
+I'd only seen in zoos before. It was remarkable how different they
+seemed. Particularly lions. Lions in the wild seem about ten times
+more alive. They're like different animals. I suspect that working
+for oneself feels better to humans in much the same way that living
+in the wild must feel better to a wide-ranging predator like a lion.
+Life in a zoo is easier, but it isn't the life they were designed
+for.
+TreesWhat's so unnatural about working for a big company?  The root of
+the problem is that humans weren't meant to work in such large
+groups.Another thing you notice when you see animals in the wild is that
+each species thrives in groups of a certain size.  A herd of impalas
+might have 100 adults; baboons maybe 20; lions rarely 10.  Humans
+also seem designed to work in groups, and what I've read about
+hunter-gatherers accords with research on organizations and my own
+experience to suggest roughly what the ideal size is: groups of 8
+work well; by 20 they're getting hard to manage; and a group of 50
+is really unwieldy.
+[1]
+Whatever the upper limit is, we are clearly not meant to work in
+groups of several hundred.  And yet—for reasons having more
+to do with technology than human nature—a great many people
+work for companies with hundreds or thousands of employees.Companies know groups that large wouldn't work, so they divide
+themselves into units small enough to work together.  But to
+coordinate these they have to introduce something new: bosses.These smaller groups are always arranged in a tree structure.  Your
+boss is the point where your group attaches to the tree.  But when
+you use this trick for dividing a large group into smaller ones,
+something strange happens that I've never heard anyone mention
+explicitly.  In the group one level up from yours, your boss
+represents your entire group.  A group of 10 managers is not merely
+a group of 10 people working together in the usual way.  It's really
+a group of groups.  Which means for a group of 10 managers to work
+together as if they were simply a group of 10 individuals, the group
+working for each manager would have to work as if they were a single
+person—the workers and manager would each share only one
+person's worth of freedom between them.In practice a group of people are never able to act as if they were
+one person.  But in a large organization divided into groups in
+this way, the pressure is always in that direction.  Each group
+tries its best to work as if it were the small group of individuals
+that humans were designed to work in.  That was the point of creating
+it.  And when you propagate that constraint, the result is that
+each person gets freedom of action in inverse proportion to the
+size of the entire tree.
+[2]Anyone who's worked for a large organization has felt this.  You
+can feel the difference between working for a company with 100
+employees and one with 10,000, even if your group has only 10 people.
+Corn SyrupA group of 10 people within a large organization is a kind of fake
+tribe.  The number of people you interact with is about right.  But
+something is missing: individual initiative.  Tribes of hunter-gatherers
+have much more freedom.  The leaders have a little more power than other
+members of the tribe, but they don't generally tell them what to
+do and when the way a boss can.It's not
+
+=== RETRIEVER RESULTS ===
+.  They're
+going to have to pry the plugs out of my cold, dead ears, however.
+
+Want to start a startup?  Get funded by
+Y Combinator.
+
+
+
+
+March 2008, rev. June 2008Technology tends to separate normal from natural.  Our bodies
+weren't designed t [/INST]
+
+debug code in an airport.  But airports are not so bad: most of the
+noise is whitish.  I couldn't work with the sound of a sitcom coming
+through the wall, or a car in the street playing thump-thump music.And of course there's another kind of thinking, when you're starting
+something new, that requires complete quiet.   You never
+know when this will strike. It's just
+=== END RETRIEVER RESULTS ===
+
+ASSISTANT: Based on the context provided, it seems that the writer is suggesting that the traditional structure of large organizations, with their hierarchical trees of management, can be detrimental to the productivity and happiness of employees. They argue that humans were not designed to work in groups of hundreds or thousands, and that this can lead to a lack of individual initiative and creativity. The writer suggests that working for a small organization or as a solo founder can be more natural and fulfilling for humans, as it allows for more freedom and autonomy. They also compare the structure of large organizations to a "fake tribe," where individuals have less freedom and autonomy than they would in a true tribe.
+
+
+USER:  your boss's fault.  The real problem is that in the group
+above you in the hierarchy, your entire group is one virtual person.
+Your boss is just the way that constraint is imparted to you.So working in a group of 10 people within a large organization feels
+both right and wrong at the same time.   On the surface it feels
+like the kind of group you're meant to work in, but something major
+is missing.  A job at a big company is like high fructose corn
+syrup: it has some of the qualities of things you're meant to like,
+but is disastrously lacking in others.Indeed, food is an excellent metaphor to explain what's wrong with
+the usual sort of job.For example, working for a big company is the default thing to do,
+at least for programmers.  How bad could it be?  Well, food shows
+that pretty clearly.  If you were dropped at a random point in
+America today, nearly all the food around you would be bad for you.
+Humans were not designed to eat white flour, refined sugar, high
+fructose corn syrup, and hydrogenated vegetable oil.  And yet if
+you analyzed the contents of the average grocery store you'd probably
+find these four ingredients accounted for most of the calories.
+"Normal" food is terribly bad for you.
+The best thing to do in San Francisco is eat a sandwich and sit in Dolores Park on a sunny day.
+  The only people who eat
+what humans were actually designed to eat are a few Birkenstock-wearing
+weirdos in Berkeley.If "normal" food is so bad for us, why is it so common?  There are
+two main reasons. One is that it has more immediate appeal.  You
+may feel lousy an hour after eating that pizza, but eating the first
+couple bites feels great.  The other is economies of scale.
+Producing junk food scales; producing fresh vegetables doesn't.
+Which means (a) junk food can be very cheap, and (b) it's worth
+spending a lot to market it.If people have to choose between something that's cheap, heavily
+marketed, and appealing in the short term, and something that's
+expensive, obscure, and appealing in the long term, which do you
+think most will choose?It's the same with work.  The average MIT graduate wants to work
+at Google or Microsoft, because it's a recognized brand, it's safe,
+and they'll get paid a good salary right away.  It's the job
+equivalent of the pizza they had for lunch.  The drawbacks will
+only become apparent later, and then only in a vague sense of
+malaise.And founders and early employees of startups, meanwhile, are like
+the Birkenstock-wearing weirdos of Berkeley:  though a tiny minority
+of the population, they're the ones living as humans are meant to.
+In an artificial world, only extremists live naturally.
+ProgrammersThe restrictiveness of big company jobs is particularly hard on
+programmers, because the essence of programming is to build new
+things.  Sales people make much the same pitches every day; support
+people answer much the same questions; but once you've written a
+piece of code you don't need to write it again.  So a programmer
+working as programmers are meant to is always making new things.
+And when you're part of an organization whose structure gives each
+person freedom in inverse proportion to the size of the tree, you're
+going to face resistance when you do something new.This seems an inevitable consequence of bigness.  It's true even
+in the smartest companies.  I was talking recently to a founder who
+considered starting a startup right out of college, but went to
+work for Google instead because he thought he'd learn more there.
+He didn't learn as much as he expected.  Programmers learn by doing,
+and most of the things he wanted to do, he couldn't—sometimes
+because the company wouldn't let him, but often because the company's
+code wouldn't let him.  Between the drag of legacy code, the overhead
+of doing development in such a large organization, and the restrictions
+imposed by interfaces owned by other groups, he could only try a
+fraction of the things he would have liked to.  He said he has
+learned much more in his own startup, despite the fact that he has
+to do all the company's errands as well as programming, because at
+least when he's programming he can do whatever he wants.An obstacle downstream propagates upstream.  If you're not allowed
+to i
+
+=== RETRIEVER RESULTS ===
+And yet—for reasons having more
+to do with technology than human nature—a great many people
+work for companies with hundreds or thousands of employees.Companies know groups that large wouldn't work, so they divide
+themselves into units small enough to work together.  But to
+coordinate these they have to introduce something new: bosses.These smaller groups are always arranged in a tree structure.  Your
+boss is the point where your group attach
+can feel the difference between working for a company with 100
+employees and one with 10,000, even if your group has only 10 people.
+Corn SyrupA group of 10 people within a large organization is a kind of fake
+tribe.  The number of people you interact with is about right.  But
+something is missing: individual initiative.  Tribes of hunter-gatherers
+have
+=== END RETRIEVER RESULTS ===
+
+ASSISTANT: The writer suggests that the traditional structure of large organizations, with their hierarchical trees and bosses, can be restrictive and limiting for employees, particularly programmers. They compare the structure of large companies to high fructose corn syrup, which has some desirable qualities but is missing many important nutrients. The writer argues that programmers learn by doing, and that the constraints of large organizations can limit their ability to try new things and learn. They suggest that the best way for programmers to work is in a small startup, where they have more freedom to try new things and learn from their mistakes.
+
+
+USER: mplement new ideas, you stop having them.  And vice versa: when
+you can do whatever you want, you have more ideas about what to do.
+So working for yourself makes your brain more powerful in the same
+way a low-restriction exhaust system makes an engine more powerful.Working for yourself doesn't have to mean starting a startup, of
+course.  But a programmer deciding between a regular job at a big
+company and their own startup is probably going to learn more doing
+the startup.You can adjust the amount of freedom you get by scaling the size
+of company you work for.  If you start the company, you'll have the
+most freedom.  If you become one of the first 10 employees you'll
+have almost as much freedom as the founders.  Even a company with
+100 people will feel different from one with 1000.Working for a small company doesn't ensure freedom.  The tree
+structure of large organizations sets an upper bound on freedom,
+not a lower bound.  The head of a small company may still choose
+to be a tyrant.  The point is that a large organization is compelled
+by its structure to be one.
+ConsequencesThat has real consequences for both organizations and individuals.
+One is that companies will inevitably slow down as they grow larger,
+no matter how hard they try to keep their startup mojo.  It's a
+consequence of the tree structure that every large organization is
+forced to adopt.Or rather, a large organization could only avoid slowing down if
+they avoided tree structure.  And since human nature limits the
+size of group that can work together, the only way I can imagine
+for larger groups to avoid tree structure would be to have no
+structure: to have each group actually be independent, and to work
+together the way components of a market economy do.That might be worth exploring.  I suspect there are already some
+highly partitionable businesses that lean this way.  But I don't
+know any technology companies that have done it.There is one thing companies can do short of structuring themselves
+as sponges:  they can stay small.  If I'm right, then it really
+pays to keep a company as small as it can be at every stage.
+Particularly a technology company.  Which means it's doubly important
+to hire the best people.  Mediocre hires hurt you twice: they get
+less done, but they also make you big, because you need more of
+them to solve a given problem.For individuals the upshot is the same: aim small.  It will always
+suck to work for large organizations, and the larger the organization,
+the more it will suck.In an essay I wrote a couple years ago 
+I advised graduating seniors
+to work for a couple years for another company before starting their
+own.  I'd modify that now.  Work for another company if you want
+to, but only for a small one, and if you want to start your own
+startup, go ahead.The reason I suggested college graduates not start startups immediately
+was that I felt most would fail.  And they will.  But ambitious
+programmers are better off doing their own thing and failing than
+going to work at a big company.  Certainly they'll learn more.  They
+might even be better off financially.  A lot of people in their
+early twenties get into debt, because their expenses grow even
+faster than the salary that seemed so high when they left school.
+At least if you start a startup and fail your net worth will be
+zero rather than negative.  
+[3]We've now funded so many different types of founders that we have
+enough data to see patterns, and there seems to be no benefit from
+working for a big company.  The people who've worked for a few years
+do seem better than the ones straight out of college, but only
+because they're that much older.The people who come to us from big companies often seem kind of
+conservative.  It's hard to say how much is because big companies
+made them that way, and how much is the natural conservatism that
+made them work for the big companies in the first place.  But
+certainly a large part of it is learned.  I know because I've seen
+it burn off.Having seen that happen so many times is one of the things that
+convinces me that working for oneself, or at least for a small
+group, is the natural way for programmers to live.  Founders arriving
+at Y Combinator often have the downtrodden air 
+
+=== RETRIEVER RESULTS ===
+founders and early employees of startups, meanwhile, are like
+the Birkenstock-wearing weirdos of Berkeley:  though a tiny minority
+of the population, they're the ones living as humans are meant to.
+In an artificial world, only extremists live naturally.
+ProgrammersThe restrictiveness of big company jobs is particularly hard on
+programmers, because the essence of programming is to build new
+things.  Sales people make much
+sugar is for us physically.I began to suspect this after spending several years working 
+with startup founders.  I've now worked with over 200 of them, and I've
+noticed a definite difference between programmers working on their
+own startups and those working for large organizations.
+I wouldn't say founders seem happier, necessarily;
+starting a startup can be very stressful. Maybe the best way to put
+it
+=== END RETRIEVER RESULTS ===
+
+ASSISTANT: The writer suggests that the traditional structure of large organizations, with their hierarchical trees and restrictive nature, can have negative consequences for both individuals and organizations. They argue that as companies grow, they will inevitably slow down due to the limitations of the tree structure, and that the best way for programmers to live is to work for themselves or a small group. The writer advises that working for a small company does not guarantee freedom, as the tree structure of large organizations sets an upper bound on freedom, and that the only way to avoid this is to have no structure or to work together like components of a market economy. They also suggest that the best way for individuals to live is to aim small and work for themselves, as working for large organizations can be detrimental to creativity and learning. The writer has seen this pattern of conservatism in programmers who have worked for big companies, and believes that working for oneself or a small group is the natural way for programmers to live.
+
+
+USER: of refugees.  Three
+months later they're transformed: they have so much more 
+confidence
+that they seem as if they've grown several inches taller. 
+[4]
+Strange as this sounds, they seem both more worried and happier at the same
+time.  Which is exactly how I'd describe the way lions seem in the
+wild.Watching employees get transformed into founders makes it clear
+that the difference between the two is due mostly to environment—and
+in particular that the environment in big companies is toxic to
+programmers.   In the first couple weeks of working on their own
+startup they seem to come to life, because finally they're working
+the way people are meant to.Notes[1]
+When I talk about humans being meant or designed to live a
+certain way, I mean by evolution.[2]
+It's not only the leaves who suffer.  The constraint propagates
+up as well as down.  So managers are constrained too; instead of
+just doing things, they have to act through subordinates.[3]
+Do not finance your startup with credit cards.  Financing a
+startup with debt is usually a stupid move, and credit card debt
+stupidest of all.  Credit card debt is a bad idea, period.  It is
+a trap set by evil companies for the desperate and the foolish.[4]
+The founders we fund used to be younger (initially we encouraged
+undergrads to apply), and the first couple times I saw this I used
+to wonder if they were actually getting physically taller.Thanks to Trevor Blackwell, Ross Boucher, Aaron Iba, Abby
+Kirigin, Ivan Kirigin, Jessica Livingston, and Robert Morris for
+reading drafts of this.April 2004To the popular press, "hacker" means someone who breaks
+into computers.  Among programmers it means a good programmer.
+But the two meanings are connected.  To programmers,
+"hacker" connotes mastery in the most literal sense: someone
+who can make a computer do what he wants—whether the computer
+wants to or not.To add to the confusion, the noun "hack" also has two senses.  It can
+be either a compliment or an insult.  It's called a hack when
+you do something in an ugly way.  But when you do something
+so clever that you somehow beat the system, that's also
+called a hack.  The word is used more often in the former than
+the latter sense, probably because ugly solutions are more
+common than brilliant ones.Believe it or not, the two senses of "hack" are also
+connected.  Ugly and imaginative solutions have something in
+common: they both break the rules.  And there is a gradual
+continuum between rule breaking that's merely ugly (using
+duct tape to attach something to your bike) and rule breaking
+that is brilliantly imaginative (discarding Euclidean space).Hacking predates computers.  When he
+was working on the Manhattan Project, Richard Feynman used to
+amuse himself by breaking into safes containing secret documents.
+This tradition continues today.
+When we were in grad school, a hacker friend of mine who spent too much
+time around MIT had
+his own lock picking kit.
+(He now runs a hedge fund, a not unrelated enterprise.)It is sometimes hard to explain to authorities why one would
+want to do such things.
+Another friend of mine once got in trouble with the government for
+breaking into computers.  This had only recently been declared
+a crime, and the FBI found that their usual investigative
+technique didn't work.  Police investigation apparently begins with
+a motive.  The usual motives are few: drugs, money, sex,
+revenge.  Intellectual curiosity was not one of the motives on
+the FBI's list.  Indeed, the whole concept seemed foreign to
+them.Those in authority tend to be annoyed by hackers'
+general attitude of disobedience.  But that disobedience is
+a byproduct of the qualities that make them good programmers.
+They may laugh at the CEO when he talks in generic corporate
+newspeech, but they also laugh at someone who tells them
+a certain problem can't be solved.
+Suppress one, and you suppress the other.This attitude is sometimes affected.  Sometimes young programmers
+notice the eccentricities of eminent hackers and decide to
+adopt some of their own in order to seem smarter.
+The fake version is not merely
+annoying; the prickly attitude of these posers
+can actually slow the process of innovation.But even factoring in their annoying eccentricities,
+the
+
+=== RETRIEVER RESULTS ===
+
+seemed. Particularly lions. Lions in the wild seem about ten times
+more alive. They're like different animals. I suspect that working
+for oneself feels better to humans in much the same way that living
+in the wild must feel better to a wide-ranging predator like a lion.
+Life in a zoo is easier, but it isn't the life they were designed
+for.
+TreesWhat's so unnatural about
+startups and those working for large organizations.\nI wouldn't say founders seem happier, necessarily;\nstarting a startup can be very stressful. Maybe the best way to put\nit"] <</SYS>> mplement new ideas, you stop having them.  And vice versa: when
+you can do whatever you want, you have more ideas about what to do.
+So working for yourself makes your brain more powerful in the same
+way a low-
+=== END RETRIEVER RESULTS ===
+
+ASSISTANT: The passage suggests that working for oneself or a small group can be more fulfilling and empowering for programmers than working for a large organization. The author argues that the constraints and limitations of a large company can stifle creativity and innovation, while working for oneself or a small group allows for more freedom and autonomy to explore new ideas and approaches. The author also notes that the difference between working for a large company and working for oneself is not just about happiness, but also about the way the brain functions, with the former limiting the ability to implement new ideas and the latter allowing for more creativity and innovation.
+
+The passage also touches on the idea of hacking, which is not just about breaking into computers, but also about finding creative and innovative solutions to problems. The author notes that hacking predates computers and is a tradition that continues today, with hackers often pushing against the rules and constraints of society to find new and better ways of doing things.
+
+Overall, the passage suggests that working for oneself or a small group can be more fulfilling and empowering for programmers, and that the constraints of large organizations can stifle creativity and innovation.
+
+
+USER:  disobedient attitude of hackers is a net win.  I wish its
+advantages were better understood.For example, I suspect people in Hollywood are
+simply mystified by
+hackers' attitudes toward copyrights.  They are a perennial
+topic of heated discussion on Slashdot.
+But why should people who program computers
+be so concerned about copyrights, of all things?Partly because some companies use mechanisms to prevent
+copying.  Show any hacker a lock and his first thought is
+how to pick it.  But there is a deeper reason that
+hackers are alarmed by measures like copyrights and patents.
+They see increasingly aggressive measures to protect
+"intellectual property"
+as a threat to the intellectual
+freedom they need to do their job.
+And they are right.It is by poking about inside current technology that
+hackers get ideas for the next generation.  No thanks,
+intellectual homeowners may say, we don't need any
+outside help.  But they're wrong.
+The next generation of computer technology has
+often—perhaps more often than not—been developed by outsiders.In 1977 there was no doubt some group within IBM developing
+what they expected to be
+the next generation of business computer.  They were mistaken.
+The next generation of business computer was
+being developed on entirely different lines by two long-haired
+guys called Steve in a garage in Los Altos.  At about the
+same time, the powers that be
+were cooperating to develop the
+official next generation operating system, Multics.
+But two guys who thought Multics excessively complex went off
+and wrote their own.  They gave it a name that
+was a joking reference to Multics: Unix.The latest intellectual property laws impose
+unprecedented restrictions on the sort of poking around that
+leads to new ideas. In the past, a competitor might use patents
+to prevent you from selling a copy of something they
+made, but they couldn't prevent you from
+taking one apart to see how it worked.   The latest
+laws make this a crime.  How are we
+to develop new technology if we can't study current
+technology to figure out how to improve it?Ironically, hackers have brought this on themselves.
+Computers are responsible for the problem.  The control systems
+inside machines used to be physical: gears and levers and cams.
+Increasingly, the brains (and thus the value) of products is
+in software. And by this I mean software in the general sense:
+i.e. data.  A song on an LP is physically stamped into the
+plastic.  A song on an iPod's disk is merely stored on it.Data is by definition easy to copy.  And the Internet
+makes copies easy to distribute.  So it is no wonder
+companies are afraid.  But, as so often happens, fear has
+clouded their judgement.  The government has responded
+with draconian laws to protect intellectual property.
+They probably mean well. But
+they may not realize that such laws will do more harm
+than good.Why are programmers so violently opposed to these laws?
+If I were a legislator, I'd be interested in this
+mystery—for the same reason that, if I were a farmer and suddenly
+heard a lot of squawking coming from my hen house one night,
+I'd want to go out and investigate.  Hackers are not stupid,
+and unanimity is very rare in this world.
+So if they're all squawking,   
+perhaps there is something amiss.Could it be that such laws, though intended to protect America,
+will actually harm it?  Think about it.  There is something
+very American about Feynman breaking into safes during
+the Manhattan Project.  It's hard to imagine the authorities
+having a sense of humor about such things over
+in Germany at that time.  Maybe it's not a coincidence.Hackers are unruly.  That is the essence of hacking.  And it
+is also the essence of Americanness.  It is no accident
+that Silicon Valley
+is in America, and not France, or Germany,
+or England, or Japan. In those countries, people color inside
+the lines.I lived for a while in Florence.  But after I'd been there
+a few months I realized that what I'd been unconsciously hoping
+to find there was back in the place I'd just left.
+The reason Florence is famous is that in 1450, it was New York.
+In 1450 it was filled with the kind of turbulent and ambitious
+people you find now in America.  (So I went back to America.)It is greatly to Amer
+
+=== RETRIEVER RESULTS ===
+the qualities that make them good programmers.
+They may laugh at the CEO when he talks in generic corporate
+newspeech, but they also laugh at someone who tells them
+a certain problem can't be solved.
+Suppress one, and you suppress the other.This attitude is sometimes affected.  Sometimes young programmers
+notice the eccentricities of eminent hackers and decide to
+adopt some of their own in order to seem sm
+
+to wonder if they were actually getting physically taller.Thanks to Trevor Blackwell, Ross Boucher, Aaron Iba, Abby
+Kirigin, Ivan Kirigin, Jessica Livingston, and Robert Morris for
+reading drafts of this.April 2004To the popular press, "hacker" means someone who breaks
+into computers.  Among programmers it means a good programmer.
+But the two meanings are connected.
+=== END RETRIEVER RESULTS ===
+
+ASSISTANT: The passage suggests that the disobedient attitude of hackers is a net win for society, as they challenge existing systems and push for innovation. The author argues that the aggressive protection of intellectual property through laws such as copyrights and patents is a threat to the intellectual freedom that hackers need to do their job. The author believes that hackers are not opposed to these laws because they are stupid or unreasonable, but rather because they understand the potential harm that these laws can cause to the innovation and progress that hackers represent.
+
+The author also notes that the qualities that make hackers good programmers, such as their disobedient attitude and willingness to challenge authority, are also American values. The author suggests that this is one reason why Silicon Valley is located in America, rather than in other countries with more restrictive attitudes towards innovation and creativity.
+
+Overall, the passage presents a nuanced and complex view of hackers and their relationship with the law, suggesting that while they may be seen as rebellious or unruly, they are also a vital part of the innovation and progress that society needs.
+
+
+USER: ica's advantage that it is
+a congenial atmosphere for the right sort of unruliness—that
+it is a home not just for the smart, but for smart-alecks.
+And hackers are invariably smart-alecks.  If we had a national
+holiday, it would be April 1st.  It says a great deal about
+our work that we use the same word for a brilliant or a
+horribly cheesy solution.   When we cook one up we're not
+always 100% sure which kind it is.  But as long as it has
+the right sort of wrongness, that's a promising sign.
+It's odd that people
+think of programming as precise and methodical.  Computers
+are precise and methodical.  Hacking is something you do
+with a gleeful laugh.In our world some of the most characteristic solutions
+are not far removed from practical
+jokes.  IBM was no doubt rather surprised by the consequences
+of the licensing deal for DOS, just as the hypothetical
+"adversary" must be when Michael Rabin solves a problem by
+redefining it as one that's easier to solve.Smart-alecks have to develop a keen sense of how much they
+can get away with.  And lately hackers 
+have sensed a change
+in the atmosphere.
+Lately hackerliness seems rather frowned upon.To hackers the recent contraction in civil liberties seems
+especially ominous.  That must also mystify outsiders. 
+Why should we care especially about civil
+liberties?  Why programmers, more than
+dentists or salesmen or landscapers?Let me put the case in terms a government official would appreciate.
+Civil liberties are not just an ornament, or a quaint
+American tradition.  Civil liberties make countries rich.
+If you made a graph of
+GNP per capita vs. civil liberties, you'd notice a definite
+trend.  Could civil liberties really be a cause, rather
+than just an effect?  I think so.  I think a society in which
+people can do and say what they want will also tend to
+be one in which the most efficient solutions win, rather than
+those sponsored by the most influential people.
+Authoritarian countries become corrupt;
+corrupt countries become poor; and poor countries are weak. 
+It seems to me there is
+a Laffer curve for government power, just as for
+tax revenues.  At least, it seems likely enough that it
+would be stupid to try the experiment and find out.  Unlike
+high tax rates, you can't repeal totalitarianism if it
+turns out to be a mistake.This is why hackers worry.  The government spying on people doesn't
+literally make programmers write worse code.  It just leads
+eventually to a world in which bad ideas win.  And because
+this is so important to hackers, they're especially sensitive
+to it.  They can sense totalitarianism approaching from a
+distance, as animals can sense an approaching  
+thunderstorm.It would be ironic if, as hackers fear, recent measures
+intended to protect national security and intellectual property
+turned out to be a missile aimed right at what makes   
+America successful.  But it would not be the first time that
+measures taken in an atmosphere of panic had
+the opposite of the intended effect.There is such a thing as Americanness.
+There's nothing like living abroad to teach you that.   
+And if you want to know whether something will nurture or squash
+this quality, it would be hard to find a better focus
+group than hackers, because they come closest of any group
+I know to embodying it.  Closer, probably,  than
+the men running our government,
+who for all their talk of patriotism
+remind me more of Richelieu or Mazarin
+than Thomas Jefferson or George Washington.When you read what the founding fathers had to say for
+themselves, they sound more like hackers.
+"The spirit of resistance to government,"
+Jefferson wrote, "is so valuable on certain occasions, that I wish
+it always to be kept alive."Imagine an American president saying that today.
+Like the remarks of an outspoken old grandmother, the sayings of
+the founding fathers have embarrassed generations of
+their less confident successors.  They remind us where we come from.
+They remind us that it is the people who break rules that are
+the source of America's wealth and power.Those in a position to impose rules naturally want them to be
+obeyed.  But be careful what you ask for. You might get it.Thanks to Ken Anderson, Trevor Blackwell, Daniel Giffin, 
+Sarah Harlin,  Shiro K
+
+=== RETRIEVER RESULTS ===
+pril 2004To the popular press, "hacker" means someone who breaks\ninto computers.  Among programmers it means a good programmer.\nBut the two meanings are connected.'] <</SYS>>  disobedient attitude of hackers is a net win.  I wish its
+advantages were better understood.For example, I suspect people in Hollywood are
+simply mystified by
+hackers' attitudes toward copyrights
+see increasingly aggressive measures to protect
+"intellectual property"
+as a threat to the intellectual
+freedom they need to do their job.
+And they are right.It is by poking about inside current technology that
+hackers get ideas for the next generation.  No thanks,
+intellectual homeowners may say, we don't need any
+outside help.  But they're wrong.
+The next generation of computer
+=== END RETRIEVER RESULTS ===
+
+ASSISTANT: The passage suggests that the disobedient attitude of hackers is a net win for society, as they challenge existing systems and push for innovation and progress. The author argues that hackers are not just smart, but also smart-alecks, and that their unruliness is a key component of American success. The author notes that the recent contraction in civil liberties is particularly concerning for hackers, as it could lead to a world in which bad ideas win. The passage also suggests that there is a connection between the disobedient attitude of hackers and the American spirit, with the founding fathers' words echoing the sentiment that resistance to government is valuable on certain occasions. Overall, the passage presents a nuanced and complex view of hackers and their role in society, highlighting both the potential benefits and drawbacks of their disobedient attitude.
+
+
+USER: awai, Jessica Livingston, Matz, 
+Jackie McDonough, Robert Morris, Eric Raymond, Guido van Rossum,
+David Weinberger, and
+Steven Wolfram for reading drafts of this essay.
+(The image shows Steves Jobs and Wozniak 
+with a "blue box."
+Photo by Margret Wozniak. Reproduced by permission of Steve
+Wozniak.)May 2021Noora Health, a nonprofit I've 
+supported for years, just launched
+a new NFT. It has a dramatic name, Save Thousands of Lives,
+because that's what the proceeds will do.Noora has been saving lives for 7 years. They run programs in
+hospitals in South Asia to teach new mothers how to take care of
+their babies once they get home. They're in 165 hospitals now. And
+because they know the numbers before and after they start at a new
+hospital, they can measure the impact they have. It is massive.
+For every 1000 live births, they save 9 babies.This number comes from a study
+of 133,733 families at 28 different
+hospitals that Noora conducted in collaboration with the Better
+Birth team at Ariadne Labs, a joint center for health systems
+innovation at Brigham and Womens Hospital and Harvard T.H. Chan
+School of Public Health.Noora is so effective that even if you measure their costs in the
+most conservative way, by dividing their entire budget by the number
+of lives saved, the cost of saving a life is the lowest I've seen.
+$1,235.For this NFT, they're going to issue a public report tracking how
+this specific tranche of money is spent, and estimating the number
+of lives saved as a result.NFTs are a new territory, and this way of using them is especially
+new, but I'm excited about its potential. And I'm excited to see
+what happens with this particular auction, because unlike an NFT
+representing something that has already happened,
+this NFT gets better as the price gets higher.The reserve price was about $2.5 million, because that's what it
+takes for the name to be accurate: that's what it costs to save
+2000 lives. But the higher the price of this NFT goes, the more
+lives will be saved. What a sentence to be able to write.February 2020What should an essay be? Many people would say persuasive. That's
+what a lot of us were taught essays should be. But I think we can
+aim for something more ambitious: that an essay should be useful.To start with, that means it should be correct. But it's not enough
+merely to be correct. It's easy to make a statement correct by
+making it vague. That's a common flaw in academic writing, for
+example. If you know nothing at all about an issue, you can't go
+wrong by saying that the issue is a complex one, that there are
+many factors to be considered, that it's a mistake to take too
+simplistic a view of it, and so on.Though no doubt correct, such statements tell the reader nothing.
+Useful writing makes claims that are as strong as they can be made
+without becoming false.For example, it's more useful to say that Pike's Peak is near the
+middle of Colorado than merely somewhere in Colorado. But if I say
+it's in the exact middle of Colorado, I've now gone too far, because
+it's a bit east of the middle.Precision and correctness are like opposing forces. It's easy to
+satisfy one if you ignore the other. The converse of vaporous
+academic writing is the bold, but false, rhetoric of demagogues.
+Useful writing is bold, but true.It's also two other things: it tells people something important,
+and that at least some of them didn't already know.Telling people something they didn't know doesn't always mean
+surprising them. Sometimes it means telling them something they
+knew unconsciously but had never put into words. In fact those may
+be the more valuable insights, because they tend to be more
+fundamental.Let's put them all together. Useful writing tells people something
+true and important that they didn't already know, and tells them
+as unequivocally as possible.Notice these are all a matter of degree. For example, you can't
+expect an idea to be novel to everyone. Any insight that you have
+will probably have already been had by at least one of the world's
+7 billion people. But it's sufficient if an idea is novel to a lot
+of readers.Ditto for correctness, importance, and strength. In effect the four
+components are like numbers you can multiply together to get a s
+
+=== RETRIEVER RESULTS ===
+.  They're
+going to have to pry the plugs out of my cold, dead ears, however.
+
+Want to start a startup?  Get funded by
+Y Combinator.
+
+
+
+
+March 2008, rev. June 2008Technology tends to separate normal from natural.  Our bodies
+weren't designed t [/INST]
+the first 10 employees you'll
+have almost as much freedom as the founders.  Even a company with
+100 people will feel different from one with 1000.Working for a small company doesn't ensure freedom.  The tree
+structure of large organizations sets an upper bound on freedom,
+not a lower bound.  The head of a small company may still choose
+to be a tyrant.  The point is that a large
+=== END RETRIEVER RESULTS ===
+
+ASSISTANT: The passage discusses the concept of a useful essay, which should aim to be both persuasive and informative. The author argues that an essay should be correct, but not just vague or superficially accurate. Instead, it should make claims that are as strong as possible without becoming false, and provide information that is both true and important to readers. The author also emphasizes the importance of precision and correctness, and notes that useful writing is bold but true, and tells people something they didn't already know. The passage concludes by suggesting that useful writing is a matter of degree, and that an essay can be considered useful if it provides novel insights to a significant number of readers.
+
+
+USER: What is the best thing to do in San Francisco? Don't give information outside the document or repeat your findings
+
+=== RETRIEVER RESULTS ===
+finding notes I'd
+written years before that might say something I needed to remember,
+if I could only figure out what.As for books, I know the house would probably have something to
+read.  On the average trip I bring four books and only read one of
+them, because I find new books to read en route.  Really bringing
+books is insurance.I realize this dependence on books is not entirely good—that what
+I need them for is
+they save 9 babies.This number comes from a study
+of 133,733 families at 28 different
+hospitals that Noora conducted in collaboration with the Better
+Birth team at Ariadne Labs, a joint center for health systems
+innovation at Brigham and Womens Hospital and Harvard T.H. Chan
+School of Public Health.Noora is so effective that even if you measure their costs
+=== END RETRIEVER RESULTS ===
+
+ASSISTANT: Based on the context provided, the best thing to do in San Francisco is to visit Noora Health. According to the passage, Noora Health is a nonprofit organization that runs programs in hospitals in South Asia to teach new mothers how to take care of their babies. The organization is effective in saving lives, with a study showing that they save 9 babies for every 1000 live births.
