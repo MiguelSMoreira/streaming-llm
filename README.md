@@ -1,10 +1,10 @@
 
 # Extending Context-Awareness in StreamingLLM with Retrieval-Augmented Generation
-[[report]()] [[poster]()][[video](https://youtu.be/xIBHok1K6T8)]
+[[report]()] [[poster](assets/poster.pdf)][[video](https://youtu.be/xIBHok1K6T8)]
 
 ![schemes](figures/benchmark.png)
 
-https://github.com/user-attachments/assets/bc0c233d-0082-4e5a-b880-e347b727457e
+https://github.com/user-attachments/assets/6ba5e74f-d61b-4756-acc9-73849d2c0c6c
 
 ## TL;DR
 We deploy LLMs for infinite-length inputs without sacrificing efficiency and performance. By integrating Retrieval-Augmented Generation (RAG), we extend context capabilities while preserving relevance and optimizing memory usage.
