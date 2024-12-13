@@ -43,7 +43,6 @@ python examples/run_streaming_llama.py \
    --enable_streaming \
    --model_name_or_path meta-llama/Llama-2-7b-chat-hf \
    --enable_retriever \
-   --debug_retriever \
    --enable_always_retriever \
    --chunk_size 100 \
    --recent_size 4096 \
