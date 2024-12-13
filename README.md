@@ -47,7 +47,7 @@ python examples/run_streaming_llama.py \
    --enable_always_retriever \
    --chunk_size 100 \
    --recent_size 4096 \
-   --file_path data/prompt_context_length_10000_depth_percent0.json
+   --file_path data/prompt_context_length_6000_depth_percent50.json
 ```
 
 ## Setup
