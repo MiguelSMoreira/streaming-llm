@@ -1,6 +1,6 @@
 
 # Extending Context-Awareness in StreamingLLM with Retrieval-Augmented Generation
-[[report]()] [[poster](assets/poster.pdf)] [[video](https://youtu.be/xIBHok1K6T8)]
+[[report](assets/report.pdf)] [[poster](assets/poster.pdf)] [[video](https://youtu.be/xIBHok1K6T8)]
 
 ## Demonstration
 https://github.com/user-attachments/assets/6ba5e74f-d61b-4756-acc9-73849d2c0c6c
