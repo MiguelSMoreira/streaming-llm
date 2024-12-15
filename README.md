@@ -68,7 +68,7 @@ python examples/run_streaming_llama.py \
 
 
 ## Citation
-
+The original StreamingLLM paper can be cited as,
 ```bibtex
 @article{xiao2023streamingllm,
         title={Efficient Streaming Language Models with Attention Sinks},
